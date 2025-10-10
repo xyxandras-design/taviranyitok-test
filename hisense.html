@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HISENSE távirányítók</title>
+<style>
+  body {
+    font-family: Tahoma, Verdana, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+  }
+
+  .container {
+    max-width: 970px;
+    margin: 0 auto;
+    border: 1px solid #000;
+    background: #fff;
+  }
+
+  /* Fejléc */
+  .header-container {
+    display: flex;
+    justify-content: center; /* középre hozza a tartalmat */
+    align-items: center;
+    background-color: #006666;
+    color: #fff;
+    padding: 10px;
+    height: 70px;
+  }
+
+  .header-center {
+    text-align: center;
+  }
+  .header-center h1 {
+    margin: 0;
+    font-size: 22px;
+  }
+  .header-center p {
+    margin: 0;
+    font-size: 13px;
+  }
+
+  nav {
+    background-color: #FFFFCC;
+    text-align: center;
+    padding: 5px;
+  }
+  nav a {
+    margin: 0 5px;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+  }
+  nav a:hover { color: #CC0000; }
+
+  .breadcrumb {
+    font-size: 14px;
+    color: #006666;
+    padding: 8px 0 0 10px;
+    margin: 0;
+    font-family: Tahoma, Arial, sans-serif;
+  }
+
+  .breadcrumb a, .breadcrumb span {
+    color: #006666;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .breadcrumb a:hover { text-decoration: underline; }
+
+  .info-box {
+    background-color: #006666;
+    color: #fff;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .info-box p {
+    margin: 0;
+    line-height: 1.4;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    background: #fff;
+    border-radius: 5px;
+  }
+
+  .product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 10px;
+  }
+
+  .product-item {
+    width: 150px;
+    text-align: center;
+  }
+
+  .product-box {
+    position: relative;
+    background: #eee;
+    padding: 8px 10px 6px 10px; /* kevesebb alul, hogy ne legyen túl nagy tér */
+    border-radius: 5px;
+    min-height: 230px; /* elég magas a 200px-es képekhez + ikonokhoz */
+  }
+
+  .product-box img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .zoom-icon, .pdf-icon {
+  position: absolute;
+  top: 5px;
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  }
+
+  .zoom-icon {
+  left: 5px;
+  background: rgba(255,255,255,0.8);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  text-decoration: none;
+  }
+  
+ .pdf-icon {
+  right: 5px;
+  }
+
+ .pdf-icon:hover,
+ .zoom-icon:hover {
+  transform: scale(1.1);
+  }
+  
+  .product-info {
+    margin-top: 5px;
+  }
+
+  .product-info p {
+    margin: 3px 0;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.2;
+  }
+
+  .lightbox {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.8);
+    justify-content: center;
+    align-items: center;
+  }
+
+  .lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+    border: 5px solid #fff;
+    border-radius: 5px;
+  }
+
+  .lightbox:target { display: flex; }
+
+  .back-btn {
+    display: block;
+    margin: 0px auto;
+    padding: 10px 20px;
+    background: #006666;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+  }
+  .back-btn:hover { background: #004c4c; }
+
+  footer {
+    background-color: #006666;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<header>
+  <div class="header-container">
+    <div class="header-center">
+      <h1>HISENSE távirányítók</h1>
+      <p>Mobil: +36-30-7562289</p>
+    </div>
+      
+</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="informacio.html">Információ</a>
+  <a href="rc-ic.html">RC-IC</a>
+  <a href="pic-es_tema.html">PIC-es téma</a>
+  <a href="adatok.html">Adatok</a>
+  <a href="erdekes.html">Érdekes</a>
+  <a href="specialis.html">Speciális</a>
+  <a href="kapcsolat.html">Kapcsolat</a>
+  <a href="https://www.taviranyitok.hu" target="_blank">Webáruház</a>
+</nav>
+
+<div class="breadcrumb">
+  <span>Home</span> / 
+  <span>Hisense távirányítók</span>
+</div>
+
+<div class="info-box">
+  <p>Az alábbiakban megtalálhatók a HISENSE márkájú távirányítók aktuális kínálata.</p>
+</div>
+
+<main>
+  <div class="product-grid">
+    <div class="product-item">
+      <div class="product-box">
+        <a href="hisense-taviranyitok/en2a30.html" target="_blank">
+          <img src="media/hisense-taviranyitok/en2a30_pici.jpg" alt="HISENSE EN2A30 távirányító">
+        </a>
+        <a href="#img1" class="zoom-icon">🔎</a>
+      </div>
+      <div class="product-info">
+        <p>EN2A30</p>
+        <p>Bruttó: 5.800 Ft</p>
+      </div>
+    </div>
+
+    <div class="product-item">
+      <div class="product-box">
+        <a href="hisense-taviranyitok/en2ak27h.html" target="_blank">
+          <img src="media/hisense-taviranyitok/en2ak27h_pici.jpg" alt="HISENSE EN2AK27H távirányító">
+        </a>
+        <a href="#img2" class="zoom-icon">🔎</a>
+      </div>
+      <div class="product-info">
+        <p>EN2AK27H</p>
+        <p>Bruttó: 5.800 Ft</p>
+      </div>
+    </div>
+
+    <div class="product-item">
+      <div class="product-box">
+        <a href="hisense-taviranyitok/en2bb27h.html" target="_blank">
+          <img src="media/hisense-taviranyitok/en2bb27h_pici.jpg" alt="HISENSE EN2BB27H távirányító">
+        </a>
+        <a href="#img3" class="zoom-icon">🔎</a>
+      </div>
+      <div class="product-info">
+        <p>EN2BB27H</p>
+        <p>Bruttó: 5.800 Ft</p>
+      </div>
+    </div>
+
+    <div class="product-item">
+      <div class="product-box">
+        <a href="hisense-taviranyitok/en2bf27h.html" target="_blank">
+          <img src="media/hisense-taviranyitok/en2bf27h_pici.jpg" alt="HISENSE EN2BF27H távirányító">
+        </a>
+        <a href="#img4" class="zoom-icon">🔎</a>
+      </div>
+      <div class="product-info">
+        <p>EN2BF27H</p>
+        <p>Bruttó: 5.800 Ft</p>
+      </div>
+    </div>
+
+    <div class="product-item">
+      <div class="product-box">
+        <a href="hisense-taviranyitok/en2bi27h.html" target="_blank">
+          <img src="media/hisense-taviranyitok/en2bi27h_pici.jpg" alt="HISENSE EN2BI27H távirányító">
+        </a>
+        <a href="#img5" class="zoom-icon">🔎</a>
+      </div>
+      <div class="product-info">
+        <p>EN2BI27H</p>
+        <p>Bruttó: 5.800 Ft</p>
+      </div>
+    </div>
+
+    <div class="product-item">
+      <div class="product-box">
+        <a href="hisense-taviranyitok/en2d27.html" target="_blank">
+          <img src="media/hisense-taviranyitok/en2d27_pici.jpg" alt="HISENSE EN2D27 távirányító">
+        </a>
+        <a href="#img6" class="zoom-icon">🔎</a>
+      </div>
+      <div class="product-info">
+        <p>EN2D27</p>
+        <p>Bruttó: 5.800 Ft</p>
+      </div>
+    </div>
+  </div>
+
+  <button class="back-btn" onclick="window.close()">Vissza</button>
+</main>
+
+<!-- lightbox képek -->
+<div id="img1" class="lightbox">
+  <a href="#"><img src="media/hisense-taviranyitok/en2a30.jpg" alt="EN2A30 nagy kép"></a>
+</div>
+<div id="img2" class="lightbox">
+  <a href="#"><img src="media/hisense-taviranyitok/en2ak27h.jpg" alt="EN2AK27H nagy kép"></a>
+</div>
+<div id="img3" class="lightbox">
+  <a href="#"><img src="media/hisense-taviranyitok/en2bb27h.jpg" alt="EN2BB27H nagy kép"></a>
+</div>
+<div id="img4" class="lightbox">
+  <a href="#"><img src="media/hisense-taviranyitok/en2bf27h.jpg" alt="EN2BF27H nagy kép"></a>
+</div>
+<div id="img5" class="lightbox">
+  <a href="#"><img src="media/hisense-taviranyitok/en2bi27h.jpg" alt="EN2BI27H nagy kép"></a>
+</div>
+<div id="img6" class="lightbox">
+  <a href="#"><img src="media/hisense-taviranyitok/en2d27.jpg" alt="EN2D27 nagy kép"></a>
+</div>
+
+<footer>
+  (c) 2007 Varga András. IR-99 BT. Minden jog fenntartva!
+</footer>
+
+</div>
+<script>
+  // Lightbox megnyitása ugrás nélkül
+  document.querySelectorAll('.zoom-icon').forEach(icon => {
+    icon.addEventListener('click', function(e) {
+      e.preventDefault(); // megakadályozza a horgonypont ugrást
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        target.style.display = 'flex';
+        document.body.style.overflow = 'hidden'; // háttérgörgetés tiltása
+      }
+    });
+  });
+
+  // Lightbox bezárása (akár képre, akár mellé kattintanak)
+  document.querySelectorAll('.lightbox').forEach(box => {
+    // Bezárás bárhová kattintva
+    box.addEventListener('click', function() {
+      this.style.display = 'none';
+      document.body.style.overflow = ''; // görgetés visszaállítása
+    });
+
+    // Kép kattintásának megakadályozása (ne ugorjon az oldal)
+    const img = box.querySelector('img');
+    if (img) {
+      img.addEventListener('click', function(e) {
+        e.stopPropagation(); // ne buborékoljon fel a kattintás
+        e.preventDefault(); // ne kezelje a <a href="#">-t
+        box.style.display = 'none'; // bezárás
+        document.body.style.overflow = ''; // görgetés visszaállítása
+      });
+    }
+  });
+</script>
+</body>
+</html>
