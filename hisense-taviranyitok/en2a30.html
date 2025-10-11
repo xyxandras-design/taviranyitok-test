@@ -259,19 +259,19 @@
 
 <!-- Lightbox képek -->
 <div id="img1" class="lightbox">
-  <a href="#">
+  <a href="javascript:void(0);">
     <img src="../media/hisense-taviranyitok/en2a30.jpg" alt="EN2A30 nagy kép">
   </a>
 </div>
 
 <div id="img2" class="lightbox">
-  <a href="#">
+  <a href="javascript:void(0);">
     <img src="../media/kep/alien5.jpg" alt="Utángyártott nagy kép">
   </a>
 </div>
 
 <div id="img3" class="lightbox">
-  <a href="#">
+  <a href="javascript:void(0);">
     <img src="../media/kep/alien4.jpg" alt="Utángyártott1 nagy kép">
   </a>
 </div>
@@ -294,6 +294,7 @@
         document.body.style.position = 'fixed';
         document.body.style.top = `-${lastScrollY}px`;
         document.body.style.width = '100%';
+		document.body.style.overflowY = 'scroll'; // ← IDE JÖN EZ A SOR
         target.style.display = 'flex';
       }
     });
@@ -309,6 +310,7 @@
         document.body.style.position = '';
         document.body.style.top = '';
         document.body.style.width = '';
+		document.body.style.overflowY = ''; // ← IDE IS EZT A SORT
         window.scrollTo(0, lastScrollY); // visszagörgetés
       });
     }
