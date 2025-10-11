@@ -67,21 +67,25 @@
   aside h3 { margin-top: 0; font-size: 16px; }
   aside ul { list-style: none; padding: 0; margin: 0; }
   aside ul li { margin-bottom: 5px; }
+  
   aside ul li a {
     text-decoration: none;
     color: #000;
     font-size: 14px;
 	font-weight: bold;         /* félkövér (BOLD) */
   }
+	
+  aside ul li a:visited {
+    color: #000;
+  }
+  
   aside ul li a:hover { 
     color: #CC0000; 		   /* hoverre piros, ha akarod */
 	text-decoration: none;     /* hoverkor se legyen aláhúzva */
-	}
+  }
 
-  aside ul li a:visited,
-  aside ul li a:active {
+	aside ul li a:active {
     color: #000;
-    text-decoration: none;
   }
   
   .content-area {
@@ -93,14 +97,14 @@
   }
 
   .info-box {
-  background-color: #006666;
-  color: #fff;
-  padding: 10px;
-  margin: 0;
-  border-radius: 5px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+	background-color: #006666;
+	color: #fff;
+	padding: 10px;
+	margin: 0;
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
   }
 
   .info-box p {
