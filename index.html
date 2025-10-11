@@ -78,6 +78,12 @@
 	text-decoration: none;     /* hoverkor se legyen aláhúzva */
 	}
 
+  aside ul li a:visited,
+  aside ul li a:active {
+    color: #000;
+    text-decoration: none;
+  }
+  
   .content-area {
     display: flex;
     flex-direction: column;
@@ -392,37 +398,37 @@ Kellemes bögészést kívánok mindenkinek!</p>
 
 <!-- Lightbox képek -->
 <div id="img1" class="lightbox">
-  <a href="#">
+  <a href="javascript:void(0);">
     <img src="media/hisense-taviranyitok/en2a30.jpg" alt="EN2A30 nagy kép">
   </a>
 </div>
 
 <div id="img2" class="lightbox">
-  <a href="#">
+  <a href="javascript:void(0);">
     <img src="media/hisense-taviranyitok/en2ak27h.jpg" alt="EN2AK27H nagy kép">
   </a>
 </div>
 
 <div id="img3" class="lightbox">
-  <a href="#">
+  <a href="javascript:void(0);">
     <img src="media/hisense-taviranyitok/en2bb27h.jpg" alt="EN2BB27H nagy kép">
   </a>
 </div>
 
 <div id="img4" class="lightbox">
-  <a href="#">
+  <a href="javascript:void(0);">
     <img src="media/hisense-taviranyitok/en2bf27h.jpg" alt="EN2BF27H nagy kép">
   </a>
 </div>
 
 <div id="img5" class="lightbox">
-  <a href="#">
+  <a href="javascript:void(0);">
     <img src="media/hisense-taviranyitok/en2bi27h.jpg" alt="EN2BI27H nagy kép">
   </a>
 </div>
 
 <div id="img6" class="lightbox">
-  <a href="#">
+  <a href="javascript:void(0);">
     <img src="media/hisense-taviranyitok/en2d27.jpg" alt="EN2D27 nagy kép">
   </a>
 </div>
@@ -445,6 +451,7 @@ Kellemes bögészést kívánok mindenkinek!</p>
         document.body.style.position = 'fixed';
         document.body.style.top = `-${lastScrollY}px`;
         document.body.style.width = '100%';
+		document.body.style.overflowY = 'scroll'; // ← IDE JÖN EZ A SOR
         target.style.display = 'flex';
       }
     });
@@ -460,6 +467,7 @@ Kellemes bögészést kívánok mindenkinek!</p>
         document.body.style.position = '';
         document.body.style.top = '';
         document.body.style.width = '';
+		document.body.style.overflowY = ''; // ← IDE IS EZT A SORT
         window.scrollTo(0, lastScrollY); // visszagörgetés
       });
     }
