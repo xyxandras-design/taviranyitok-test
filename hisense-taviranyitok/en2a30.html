@@ -9,7 +9,7 @@
     font-family: Tahoma, Verdana, Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: #f4f4f4;
+    background: #f0f0f0;
   }
 
   .container {
@@ -294,7 +294,6 @@
         document.body.style.position = 'fixed';
         document.body.style.top = `-${lastScrollY}px`;
         document.body.style.width = '100%';
-		document.body.style.overflowY = 'scroll'; // ← IDE JÖN EZ A SOR
         target.style.display = 'flex';
       }
     });
@@ -310,7 +309,6 @@
         document.body.style.position = '';
         document.body.style.top = '';
         document.body.style.width = '';
-		document.body.style.overflowY = ''; // ← IDE IS EZT A SORT
         window.scrollTo(0, lastScrollY); // visszagörgetés
       });
     }
