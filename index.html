@@ -466,6 +466,12 @@ Kellemes bögészést kívánok mindenkinek!</p>
       });
     }
   });
+  
+  // Mobil fókuszprobléma javítása: minden linkről levesszük a fókuszt
+  window.addEventListener('pageshow', () => {
+    document.activeElement?.blur();
+  });
+  
 </script>
 </body>
 </html>
