@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="format-detection" content="telephone=no">
 <title>HISENSE távirányítók</title>
 <style>
   body {
@@ -374,6 +375,7 @@
   		document.body.style.position = 'fixed';
   		document.body.style.top = `-${lastScrollY}px`;
   		document.body.style.width = '100%';
+  		document.body.style.overflowY = 'scroll'; // ← IDE JÖN EZ A SOR
   		target.style.display = 'flex';
       }
     });
@@ -389,6 +391,7 @@
         document.body.style.position = '';
 		document.body.style.top = '';
 		document.body.style.width = '';
+	/*	document.body.style.overflowY = ''; // ← IDE IS EZT A SORT */
 		window.scrollTo(0, lastScrollY);
       });
     }

@@ -467,18 +467,6 @@ Kellemes bögészést kívánok mindenkinek!</p>
       });
     }
   });
-  
-  // Mobilon és asztalin is megszünteti a fókuszt (piros maradás ellen)
-  window.addEventListener('pageshow', () => {
-    document.activeElement?.blur();
-  });
-
-  document.addEventListener('touchstart', () => {
-    if (document.activeElement && document.activeElement.tagName === 'A') {
-      document.activeElement.blur();
-    }
-  });
-  
 </script>
 </body>
 </html>
