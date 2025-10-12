@@ -6,6 +6,11 @@
 <meta name="format-detection" content="telephone=no">
 <title>EN2A30 távirányító</title>
 <style>
+
+  html {
+    overflow-y: scroll;
+  }
+  
   body {
     font-family: Tahoma, Verdana, Arial, sans-serif;
     margin: 0;
@@ -295,7 +300,7 @@
         document.body.style.position = 'fixed';
         document.body.style.top = `-${lastScrollY}px`;
         document.body.style.width = '100%';
-		document.body.style.overflowY = 'scroll'; // ← IDE JÖN EZ A SOR
+	/*	document.body.style.overflowY = 'scroll'; // ← IDE JÖN EZ A SOR */
         target.style.display = 'flex';
       }
     });
