@@ -477,6 +477,11 @@ Kellemes bögészést kívánok mindenkinek!</p>
       });
     }
   });
+  
+  window.addEventListener('pageshow', () => {
+    document.activeElement?.blur();
+  });
+  
 </script>
 </body>
 </html>
