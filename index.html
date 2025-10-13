@@ -195,11 +195,6 @@
     padding: 10px;
   }
   
-  a:focus {
-  color: inherit !important;
-  outline: none;
-}
-  
 </style>
 </head>
 <body>
@@ -456,7 +451,6 @@ Kellemes bögészést kívánok mindenkinek!</p>
         document.body.style.position = 'fixed';
         document.body.style.top = `-${lastScrollY}px`;
         document.body.style.width = '100%';
-	/*	document.body.style.overflowY = 'scroll'; // ← IDE JÖN EZ A SOR */
         target.style.display = 'flex';
       }
     });
@@ -472,16 +466,10 @@ Kellemes bögészést kívánok mindenkinek!</p>
         document.body.style.position = '';
         document.body.style.top = '';
         document.body.style.width = '';
-	/*	document.body.style.overflowY = ''; // ← IDE IS EZT A SORT */
         window.scrollTo(0, lastScrollY); // visszagörgetés
       });
     }
   });
-  
-  window.addEventListener('pageshow', () => {
-    document.activeElement?.blur();
-  });
-  
 </script>
 </body>
 </html>
