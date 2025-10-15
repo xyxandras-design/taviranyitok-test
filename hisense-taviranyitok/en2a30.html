@@ -10,21 +10,18 @@
   html {
     overflow-y: scroll;
   }
-  
   body {
     font-family: Tahoma, Verdana, Arial, sans-serif;
     margin: 0;
     padding: 0;
     background: #f0f0f0;
   }
-
   .container {
     max-width: 970px;
     margin: 0 auto;
     border: 1px solid #000;
     background: #fff;
   }
-
   /* Fejléc */
   .header-container {
     display: flex;
@@ -35,24 +32,21 @@
     padding: 10px;
     height: 70px;
   }
-
   .header-center { text-align: center; }
   .header-center h1 { margin: 0; font-size: 22px; }
   .header-center p { margin: 0; font-size: 13px; }
-
+  
   nav {
     background-color: #FFFFCC;
     text-align: center;
     padding: 5px;
   }
-
   nav a {
     margin: 0 5px;
     text-decoration: none;
     color: #000;
 	font-weight: bold;
   }
-	
   nav a:hover { color: #CC0000; }
 
   .breadcrumb {
@@ -75,7 +69,6 @@
     margin: 10px;
     border-radius: 5px;
   }
-
   .info-box p {
     margin: 0;
     line-height: 1.4;
@@ -96,12 +89,15 @@
     justify-content: flex-start;
     gap: 10px;
   }
-
   .product-item {
     width: 150px;
     text-align: center;
+    border: 1px solid #bbb;     /* vékony, világosszürke keret */
+    border-radius: 6px;         /* enyhe lekerekítés, mint a boxnál */
+    padding: 0px;               /* kis belső tér a tartalom körül */
+    background: #f9f9f9;        /* enyhe háttér a jobb elkülönítéshez */
+    box-sizing: border-box;     /* hogy a méret ne változzon */
   }
-
   .product-box {
     position: relative;
     background: #eee;
@@ -109,7 +105,6 @@
     border-radius: 5px;
     min-height: 230px;
   }
-
   .product-box img {
     max-width: 100%;
     height: auto;
@@ -151,14 +146,12 @@
     justify-content: center;
     align-items: center;
   }
-
   .lightbox img {
     max-width: 90%;
     max-height: 90%;
     border: 5px solid #fff;
     border-radius: 5px;
   }
-
   .lightbox:target { display: flex; }
 
   .back-btn {
