@@ -174,19 +174,28 @@
     padding: 10px;
   }
   
-  .type-label {
+  .device-label {
     position: absolute;
-    bottom: 5px;
+    bottom: 6px;
     left: 6px;
-    background-color: rgba(0, 102, 102, 0.9);
+    background-color: #006666; /* Alap: TV */
     color: #fff;
     font-size: 11px;
     font-weight: bold;
-    padding: 2px 5px;
-    border-radius: 3px;
     letter-spacing: 1px;
+    padding: 2px 6px;
+    border-radius: 3px;
     pointer-events: none;
   }
+
+  /* Színváltozatok */
+  .device-dvd { background-color: #0044cc; }
+  .device-vcr { background-color: #8b4513; }
+  .device-sat, .device-stb { background-color: #ff6600; }
+  .device-hifi { background-color: #d4af37; } /* aranysárgás */
+  .device-cd { background-color: #777; }
+  .device-tape { background-color: #555; }
+  .device-amp { background-color: #990099; }
 
 </style>
 </head>
@@ -227,7 +236,7 @@
         <a href="#img1" class="zoom-icon">🔎</a>
         <a href="../hisense-taviranyitok/hd-1200.pdf" target="_blank" title="PDF megnyitása">
           <img src="../media/kep/pdf_ikon.jpg" alt="PDF megnyitása" class="pdf-icon"></a>
-          <div class="type-label">TV</div> <!-- ← ide kerül a típus -->
+          <span class="device-label device-tv">TV</span>
       </div>
       <div class="product-info">
         <p>Eredeti</p>
@@ -243,7 +252,7 @@
         <a href="#img2" class="zoom-icon">🔎</a>
         <a href="../hisense-taviranyitok/hd-1200.pdf" target="_blank" title="PDF megnyitása">
           <img src="../media/kep/pdf_ikon.jpg" alt="PDF megnyitása" class="pdf-icon"></a>
-          <div class="type-label">TV</div> <!-- ← ide kerül a típus -->
+          <span class="device-label device-dvd">DVD</span>
       </div>
       <div class="product-info">
         <p>Utángyártott</p>
@@ -259,7 +268,7 @@
         <a href="#img3" class="zoom-icon">🔎</a>
         <a href="../hisense-taviranyitok/hd-1200.pdf" target="_blank" title="PDF megnyitása">
           <img src="../media/kep/pdf_ikon.jpg" alt="PDF megnyitása" class="pdf-icon"></a>
-          <div class="type-label">TV</div> <!-- ← ide kerül a típus -->
+          <span class="device-label device-vcr">VCR</span>
       </div>
       <div class="product-info">
         <p>Utángyártott1</p>
