@@ -106,32 +106,29 @@
   }
 	
   .zoom-icon, .pdf-icon {
-  position: absolute;
-  top: 5px;
-  width: 28px;
-  height: 28px;
-  cursor: pointer;
-  transition: transform 0.2s ease;
+    position: absolute;
+    top: 5px;
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
   }
-
   .zoom-icon {
-  left: 5px;
-  background: rgba(255,255,255,0.8);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 14px;
-  text-decoration: none;
+    left: 5px;
+    background: rgba(255,255,255,0.8);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    text-decoration: none;
   }
-  
- .pdf-icon {
-  right: 5px;
+  .pdf-icon {
+    right: 5px;
   }
-
- .pdf-icon:hover,
- .zoom-icon:hover {
-  transform: scale(1.1);
+  .pdf-icon:hover,
+  .zoom-icon:hover {
+    transform: scale(1.1);
   }
   
   .product-info {
@@ -199,14 +196,15 @@
     border-radius: 3px;
     pointer-events: none;
   }
-
   /* Színváltozatok */
+  .device-tv { background-color: #006666; }
   .device-dvd { background-color: #0044cc; }
   .device-vcr { background-color: #8b4513; }
-  .device-sat, .device-stb { background-color: #ff6600; }
-  .device-hifi { background-color: #d4af37; } /* aranysárgás */
-  .device-cd { background-color: #777; }
-  .device-tape { background-color: #555; }
+  .device-sat { background-color: #ff6600; }
+  .device-stb { background-color: #ff3300; }
+  .device-hifi { background-color: #e4af37; } /* aranysárgás */
+  .device-cd { background-color: #a19a1b; }
+  .device-tape { background-color: #5cb123; }
   .device-amp { background-color: #990099; }
 
 </style>
@@ -338,7 +336,7 @@
           <img src="media/hisense-taviranyitok/en2f30h_pici.jpg" alt="HISENSE EN2F30H TV távirányító">
         </a>
         <a href="#img7" class="zoom-icon">🔎</a>
-        <span class="device-label device-tv">TV</span>
+        <span class="device-label device-cd">CD</span>
       </div>
       <div class="product-info">
         <p>EN2F30H</p>
@@ -352,7 +350,7 @@
           <img src="media/hisense-taviranyitok/en2g30h_pici.jpg" alt="HISENSE EN2G30H TV távirányító">
         </a>
         <a href="#img8" class="zoom-icon">🔎</a>
-        <span class="device-label device-tv">TV</span>
+        <span class="device-label device-tape">TAPE</span>
       </div>
       <div class="product-info">
         <p>EN2G30H</p>
@@ -366,7 +364,7 @@
           <img src="media/hisense-taviranyitok/en2x27hs_pici.jpg" alt="HISENSE EN2X27HS TV távirányító">
         </a>
         <a href="#img9" class="zoom-icon">🔎</a>
-        <span class="device-label device-tv">TV</span>
+        <span class="device-label device-amp">AMP</span>
       </div>
       <div class="product-info">
         <p>EN2X27HS</p>
