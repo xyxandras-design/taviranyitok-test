@@ -139,8 +139,16 @@
     font-weight: bold;
     text-align: center;
     line-height: 1.2;
+	white-space: nowrap;
+    overflow: hidden;	
   }
-
+  
+  /* ha hosszú kód (pl. 15+ karakter), kisebb betűméret */
+  .product-info p.long {
+    font-size: 12px;
+    letter-spacing: -0.2px; /* finomítás, hogy jobban elférjen */
+  }
+  
   .lightbox {
     display: none;
     position: fixed;
@@ -252,7 +260,7 @@
         <span class="device-label device-tv">TV</span>
       </div>
       <div class="product-info">
-        <p>AKB729152071538M</p>
+        <p class="remote-code long">AKB729152071538M</p>
         <p>Bruttó: 5.800 Ft</p>
       </div>
     </div>
@@ -783,6 +791,13 @@
       });
     }
   });
+  
+  // --- Automatikus betűméret váltás hosszú típusnevekhez ---
+  const maxLength = 15;  // hány karakter után legyen kisebb betű
+  document.querySelectorAll('.product-info p:first-child').forEach(el => {
+    if (el.textContent.trim().length > maxLength) {
+      el.style.fontSize = '12px';
+	  
 </script>
 </body>
 </html>
