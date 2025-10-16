@@ -168,11 +168,18 @@
   }
 
   .product-info p {
-    margin: 3px 0;
-    font-size: 12px;
+	margin: 3px 0;  
+    font-size: 14px;
     font-weight: bold;
     text-align: center;
-    line-height: 1.2;
+	white-space: nowrap;
+    overflow: hidden;
+  }
+
+  /* ha hosszú kód (pl. 16+ karakter), kisebb betűméret */
+  .product-info p.long {
+    font-size: 12px;
+    letter-spacing: -0.2px; /* finomítás, hogy jobban elférjen */
   }
 
   .lightbox {
@@ -340,7 +347,7 @@ Kellemes bögészést kívánok mindenkinek!</p>
           <span class="device-label device-tv">TV</span>
         </div>
         <div class="product-info">
-          <p>Hisense</p>
+          <p>HISENSE</p>
           <p>EN2A30</p>
           <p>Bruttó: 5.800 Ft</p>
         </div>
@@ -356,7 +363,7 @@ Kellemes bögészést kívánok mindenkinek!</p>
           <span class="device-label device-dvd">DVD</span>
         </div>
         <div class="product-info">
-          <p>Hisense</p>
+          <p>HISENSE</p>
           <p>DM-LT32FHD-SM</p>
           <p>Bruttó: 5.800 Ft</p>
         </div>
@@ -372,7 +379,7 @@ Kellemes bögészést kívánok mindenkinek!</p>
           <span class="device-label device-vcr">VCR</span>
         </div>
         <div class="product-info">
-          <p>Hisense</p>
+          <p>HISENSE</p>
           <p>AKB72915207</p>
           <p>Bruttó: 5.800 Ft</p>
         </div>
@@ -388,7 +395,7 @@ Kellemes bögészést kívánok mindenkinek!</p>
           <span class="device-label device-sat">SAT</span>
         </div>
         <div class="product-info">
-          <p>Hisense</p>
+          <p>HISENSE</p>
           <p>242254915308</p>
           <p>Bruttó: 5.800 Ft</p>
         </div>
@@ -404,8 +411,8 @@ Kellemes bögészést kívánok mindenkinek!</p>
           <span class="device-label device-stb">STB</span>
         </div>
         <div class="product-info">
-          <p>Hisense</p>
-          <p>398GR10BEPHN0016JK</p>
+          <p>HISENSE</p>
+          <p class="remote-code long">398GR10BEPHN0016JK</p>
           <p>Bruttó: 5.800 Ft</p>
         </div>
       </div>
@@ -420,7 +427,7 @@ Kellemes bögészést kívánok mindenkinek!</p>
           <span class="device-label device-hifi">HIFI</span>
         </div>
         <div class="product-info">
-          <p>Hisense</p>
+          <p>HISENSE</p>
           <p>EN2D27</p>
           <p>Bruttó: 5.800 Ft</p>
         </div>
