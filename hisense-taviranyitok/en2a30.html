@@ -17,7 +17,7 @@
     background: #f0f0f0;
   }
   .container {
-    max-width: 970px;
+    max-width: 1120px;
     margin: 0 auto;
     border: 1px solid #000;
     background: #fff;
@@ -90,7 +90,7 @@
     gap: 10px;
   }
   .product-item {
-    width: 150px;
+    width: 175px;
     text-align: center;
     border: 1px solid #aaa;     /* vékony, világosszürke keret */
     border-radius: 6px;         /* enyhe lekerekítés, mint a boxnál */
@@ -119,15 +119,25 @@
     transition: transform 0.2s ease;
   }
 
-  .zoom-icon { left: 5px; background: rgba(255,255,255,0.8); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 14px; text-decoration: none; }
+  .zoom-icon { 
+    left: 5px;
+	background: rgba(255,255,255,0.8);
+	border-radius: 50%;
+	display: flex; align-items: center;
+	justify-content: center;
+	font-size: 14px;
+	text-decoration: none;
+	}
+	
   .pdf-icon { right: 5px; }
 
-  .pdf-icon:hover, .zoom-icon:hover { transform: scale(1.1); }
+  .pdf-icon:hover,
+  .zoom-icon:hover {
+    transform: scale(1.1); }
 
   .product-info {
     margin-top: 5px;
   }
-
   .product-info p {
     margin: 3px 0;
 	background: #eee;
@@ -135,6 +145,8 @@
     font-weight: bold;
     text-align: center;
     line-height: 1.2;
+	white-space: nowrap;
+    overflow: hidden;
   }
 
   .lightbox {
@@ -190,12 +202,14 @@
   }
 
   /* Színváltozatok */
+  .device-tv { background-color: #006666; }
   .device-dvd { background-color: #0044cc; }
   .device-vcr { background-color: #8b4513; }
-  .device-sat, .device-stb { background-color: #ff6600; }
-  .device-hifi { background-color: #d4af37; } /* aranysárgás */
-  .device-cd { background-color: #777; }
-  .device-tape { background-color: #555; }
+  .device-sat { background-color: #ff6600; }
+  .device-stb { background-color: #ff3300; }
+  .device-hifi { background-color: #e4af37; } /* aranysárgás */
+  .device-cd { background-color: #a19a1b; }
+  .device-tape { background-color: #5cb123; }
   .device-amp { background-color: #990099; }
 
 </style>
