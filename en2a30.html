@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="format-detection" content="telephone=no">
+<title>398GR10BEPHN0016JK távirányító</title>
+<style>
+
+  html {
+    overflow-y: scroll;
+  }
+  body {
+    font-family: Tahoma, Verdana, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f0f0f0;
+  }
+  .container {
+    max-width: 1120px;
+    margin: 0 auto;
+    border: 1px solid #000;
+    background: #fff;
+  }
+  /* Fejléc */
+  .header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #006666;
+    color: #fff;
+    padding: 10px;
+    height: 70px;
+  }
+  .header-center { text-align: center; }
+  .header-center h1 { margin: 0; font-size: 22px; }
+  .header-center p { margin: 0; font-size: 13px; }
+  
+  nav {
+    background-color: #FFFFCC;
+    text-align: center;
+    padding: 5px;
+  }
+  nav a {
+    margin: 0 5px;
+    text-decoration: none;
+    color: #000;
+	font-weight: bold;
+  }
+  nav a:hover { color: #CC0000; }
+
+  .breadcrumb {
+    font-size: 14px;
+    color: #006666;
+    padding: 8px 0 0 10px;
+    margin: 0;
+  }
+  .breadcrumb a, .breadcrumb span {
+    color: #006666;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .breadcrumb a:hover { text-decoration: underline; }
+
+  .info-box {
+    background-color: #006666;
+    color: #fff;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+  }
+  .info-box p {
+    margin: 0;
+    line-height: 1.4;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    background: #fff;
+    border-radius: 5px;
+  }
+
+  .product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 10px;
+  }
+  .product-item {
+    width: 175px;
+    text-align: center;
+    border: 1px solid #aaa;     /* vékony, világosszürke keret */
+    border-radius: 6px;         /* enyhe lekerekítés, mint a boxnál */
+    padding: 0px;               /* kis belső tér a tartalom körül */
+    background: #f9f9f9;        /* enyhe háttér a jobb elkülönítéshez */
+    box-sizing: border-box;     /* hogy a méret ne változzon */
+  }
+  .product-box {
+    position: relative;
+    background: #eee;
+    padding: 8px 10px 6px 10px;
+    border-radius: 5px;
+    min-height: 230px;
+  }
+  .product-box img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .zoom-icon, .pdf-icon {
+    position: absolute;
+    top: 5px;
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+
+  .zoom-icon { 
+    left: 5px;
+	background: rgba(255,255,255,0.8);
+	border-radius: 50%;
+	display: flex; align-items: center;
+	justify-content: center;
+	font-size: 14px;
+	text-decoration: none;
+	}
+	
+  .pdf-icon { right: 5px; }
+
+  .pdf-icon:hover,
+  .zoom-icon:hover {
+    transform: scale(1.1); }
+
+  .product-info {
+    margin-top: 5px;
+  }
+  .product-info p {
+    margin: 3px 0;
+	background: #eee;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.2;
+	white-space: nowrap;
+    overflow: hidden;
+  }
+
+  .lightbox {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.8);
+    justify-content: center;
+    align-items: center;
+  }
+  .lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+    border: 5px solid #fff;
+    border-radius: 5px;
+  }
+  .lightbox:target { display: flex; }
+
+  .back-btn {
+    display: block;
+    margin: 0px auto;
+    padding: 10px 20px;
+    background: #006666;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+  }
+  .back-btn:hover { background: #004c4c; }
+
+  footer {
+    background-color: #006666;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .device-label {
+    position: absolute;
+    bottom: 6px;
+    left: 6px;
+    background-color: #006666; /* Alap: TV */
+    color: #fff;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 2px 6px;
+    border-radius: 3px;
+    pointer-events: none;
+  }
+
+  /* Színváltozatok */
+  .device-dvd { background-color: #0044cc; }
+  .device-vcr { background-color: #8b4513; }
+  .device-sat, .device-stb { background-color: #ff6600; }
+  .device-hifi { background-color: #d4af37; } /* aranysárgás */
+  .device-cd { background-color: #777; }
+  .device-tape { background-color: #555; }
+  .device-amp { background-color: #990099; }
+
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<header>
+  <div class="header-container">
+    <div class="header-center">
+      <h1>398GR10BEPHN0016JK távirányító</h1>
+      <p>Mobil: +36-30-7562289</p>
+    </div>
+  </div>
+</header>
+
+<nav>
+  <a href="../index.html">Home</a>
+</nav>
+
+<div class="breadcrumb">
+  <span>Home</span> / 
+  <span>Hisense távirányítók</span> /
+  <span>EN2A30</span>
+</div>
+
+<div class="info-box">
+  <p>Itt jöhetnek a speciális információk az EN2A30 távirányítóról.</p>
+</div>
+
+<main>
+  <div class="product-grid">
+    <div class="product-item">
+      <div class="product-box">
+        <a href="https://www.taviranyitok.hu/hisense-taviranyitok/hisense-en2a30-taviranyito-eredeti-adatlap" target="_blank">
+          <img src="../media/hisense-taviranyitok/en2a30_pici.jpg" alt="HISENSE EN2A30 távirányító">
+        </a>
+        <a href="#img1" class="zoom-icon">🔎</a>
+        <a href="../hisense-taviranyitok/hd-1200.pdf" target="_blank" title="PDF megnyitása">
+          <img src="../media/kep/pdf_ikon.jpg" alt="PDF megnyitása" class="pdf-icon"></a>
+          <span class="device-label device-tv">TV</span>
+      </div>
+      <div class="product-info">
+        <p>Eredeti</p>
+        <p>Bruttó: 13.200 Ft</p>
+      </div>
+    </div>
+
+    <div class="product-item">
+      <div class="product-box">
+        <a href="https://www.taviranyitok.hu/hisense-taviranyitok/hisense-en2a30-taviranyito-utangyartott-adatlap" target="_blank">
+          <img src="../media/kep/alien5_pici.jpg" alt="Utángyártott 1">
+        </a>
+        <a href="#img2" class="zoom-icon">🔎</a>
+        <a href="../hisense-taviranyitok/hd-1200.pdf" target="_blank" title="PDF megnyitása">
+          <img src="../media/kep/pdf_ikon.jpg" alt="PDF megnyitása" class="pdf-icon"></a>
+          <span class="device-label device-dvd">DVD</span>
+      </div>
+      <div class="product-info">
+        <p>Utángyártott</p>
+        <p>Bruttó: 6.800 Ft</p>
+      </div>
+    </div>
+
+    <div class="product-item">
+      <div class="product-box">
+        <a href="https://www.taviranyitok.hu/hisense-taviranyitok/hisense-en2a30-taviranyito-utangyartott1-adatlap" target="_blank">
+          <img src="../media/kep/alien4_pici.jpg" alt="Utángyártott 2">
+        </a>
+        <a href="#img3" class="zoom-icon">🔎</a>
+        <a href="../hisense-taviranyitok/hd-1200.pdf" target="_blank" title="PDF megnyitása">
+          <img src="../media/kep/pdf_ikon.jpg" alt="PDF megnyitása" class="pdf-icon"></a>
+          <span class="device-label device-vcr">VCR</span>
+      </div>
+      <div class="product-info">
+        <p>Utángyártott1</p>
+        <p>Bruttó: 4.800 Ft</p>
+      </div>
+    </div>
+  </div>
+
+  <button class="back-btn" onclick="window.close()">Vissza</button>
+</main>
+
+<!-- Lightbox képek -->
+<div id="img1" class="lightbox">
+  <a href="javascript:void(0);">
+    <img src="../media/hisense-taviranyitok/en2a30.jpg" alt="EN2A30 nagy kép">
+  </a>
+</div>
+
+<div id="img2" class="lightbox">
+  <a href="javascript:void(0);">
+    <img src="../media/kep/alien5.jpg" alt="Utángyártott nagy kép">
+  </a>
+</div>
+
+<div id="img3" class="lightbox">
+  <a href="javascript:void(0);">
+    <img src="../media/kep/alien4.jpg" alt="Utángyártott1 nagy kép">
+  </a>
+</div>
+
+<footer>
+  (c) 2007 Varga András. IR-99 BT. Minden jog fenntartva!
+</footer>
+
+</div>
+<script>
+  let lastScrollY = 0;
+
+  // Lightbox megnyitása
+  document.querySelectorAll('.zoom-icon').forEach(icon => {
+    icon.addEventListener('click', function(e) {
+      e.preventDefault();
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        lastScrollY = window.scrollY;
+        document.body.style.position = 'fixed';
+        document.body.style.top = `-${lastScrollY}px`;
+        document.body.style.width = '100%';
+	/*	document.body.style.overflowY = 'scroll'; // ← IDE JÖN EZ A SOR */
+        target.style.display = 'flex';
+      }
+    });
+  });
+
+  // Lightbox bezárása – CSAK a képre kattintva
+  document.querySelectorAll('.lightbox').forEach(box => {
+    const img = box.querySelector('img');
+    if (img) {
+      img.addEventListener('click', function(e) {
+        e.preventDefault(); // ne kezelje a hivatkozást
+        box.style.display = 'none'; // bezárás
+        document.body.style.position = '';
+        document.body.style.top = '';
+        document.body.style.width = '';
+	/*	document.body.style.overflowY = ''; // ← IDE IS EZT A SORT */
+        window.scrollTo(0, lastScrollY); // visszagörgetés
+      });
+    }
+  });
+</script>
+</body>
+</html>
+
+
