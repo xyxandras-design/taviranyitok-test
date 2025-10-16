@@ -154,9 +154,11 @@
     font-size: 14px;
     text-decoration: none;
   }
+  
   .zoom-icon, .pdf-icon {
     transition: transform 0.2s ease;
   }
+  
   .zoom-icon:hover, .pdf-icon:hover {
     transform: scale(1.1); 
   }
@@ -166,21 +168,14 @@
   }
 
   .product-info p {
-	margin: 3px 0;  
+    margin: 3px 0;
+	background: #eee;
     font-size: 14px;
     font-weight: bold;
     text-align: center;
-	line-height: 1.2;
-	white-space: nowrap;
-    overflow: hidden;
+    line-height: 1.2;
   }
 
-  /* ha hosszú kód (pl. 15+ karakter), kisebb betűméret */
-  .product-info p.long {
-    font-size: 12px;
-    letter-spacing: -0.2px; /* finomítás, hogy jobban elférjen */
-  }
-  
   .lightbox {
     display: none;
     position: fixed;
@@ -347,7 +342,7 @@ Kellemes bögészést kívánok mindenkinek!</p>
         </div>
         <div class="product-info">
           <p>HISENSE</p>
-          <p>AKB729152072</p>
+          <p>EN2A30</p>
           <p>Bruttó: 5.800 Ft</p>
         </div>
       </div>
@@ -363,7 +358,7 @@ Kellemes bögészést kívánok mindenkinek!</p>
         </div>
         <div class="product-info">
           <p>HISENSE</p>
-          <p>AKB7291520723</p>
+          <p>EN2AK27H</p>
           <p>Bruttó: 5.800 Ft</p>
         </div>
       </div>
@@ -379,7 +374,7 @@ Kellemes bögészést kívánok mindenkinek!</p>
         </div>
         <div class="product-info">
           <p>HISENSE</p>
-          <p>AKB72915207267</p>
+          <p>EN2BB27H</p>
           <p>Bruttó: 5.800 Ft</p>
         </div>
       </div>
@@ -395,7 +390,7 @@ Kellemes bögészést kívánok mindenkinek!</p>
         </div>
         <div class="product-info">
           <p>HISENSE</p>
-          <p>AKB729152072345</p>
+          <p>EN2BF27H</p>
           <p>Bruttó: 5.800 Ft</p>
         </div>
       </div>
@@ -411,7 +406,7 @@ Kellemes bögészést kívánok mindenkinek!</p>
         </div>
         <div class="product-info">
           <p>HISENSE</p>
-          <p>398GR10BEPHN0016</p>
+          <p>EN2BI27H</p>
           <p>Bruttó: 5.800 Ft</p>
         </div>
       </div>
@@ -427,7 +422,7 @@ Kellemes bögészést kívánok mindenkinek!</p>
         </div>
         <div class="product-info">
           <p>HISENSE</p>
-          <p>AKB72915207234556</p>
+          <p>EN2D27</p>
           <p>Bruttó: 5.800 Ft</p>
         </div>
       </div>
@@ -479,14 +474,7 @@ Kellemes bögészést kívánok mindenkinek!</p>
 
 </div>
 <script>
-
-  // --- Automatikus betűméret váltás hosszú típusnevekhez --- akadályozza a light box működését!
-/*    const maxLength = 15;  // hány karakter után legyen kisebb betű
-    document.querySelectorAll('.product-info p:first-child').forEach(el => {
-      if (el.textContent.trim().length > maxLength) {
-        el.style.fontSize = '12px'; */
-	  
-    let lastScrollY = 0;
+  let lastScrollY = 0;
 
   // Lightbox megnyitása
   document.querySelectorAll('.zoom-icon').forEach(icon => {
@@ -517,7 +505,6 @@ Kellemes bögészést kívánok mindenkinek!</p>
       });
     }
   });
-  
 </script>
 </body>
 </html>
