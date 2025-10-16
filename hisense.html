@@ -67,7 +67,8 @@
     margin: 10px;
     border-radius: 5px;
   }
-  .info-box p { margin: 0; line-height: 1.4; }
+  .info-box p { margin: 0;
+    line-height: 1.4; }
 
   main {
     display: flex;
@@ -99,40 +100,43 @@
     border-radius: 5px;
     min-height: 230px;
   }
-  .product-box img { max-width: 100%; height: auto; }
+  .product-box img {
+	max-width: 100%;
+	height: auto;
+  }
+	
   .zoom-icon, .pdf-icon {
-    position: absolute;
-    top: 5px;
-    width: 28px;
-    height: 28px;
-    cursor: pointer;
-    transition: transform 0.2s ease;
+  position: absolute;
+  top: 5px;
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
   }
 
   .zoom-icon {
-    left: 5px;
-    background: rgba(255,255,255,0.8);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 14px;
-    text-decoration: none;
+  left: 5px;
+  background: rgba(255,255,255,0.8);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  text-decoration: none;
   }
   
-  .pdf-icon {
-    right: 5px;
+ .pdf-icon {
+  right: 5px;
   }
 
-  .pdf-icon:hover,
-  .zoom-icon:hover {
-    transform: scale(1.1);
+ .pdf-icon:hover,
+ .zoom-icon:hover {
+  transform: scale(1.1);
   }
   
   .product-info {
     margin-top: 5px;
   }
-
   .product-info p {
     margin: 3px 0;
 	background: #eee;
@@ -143,13 +147,7 @@
 	white-space: nowrap;
     overflow: hidden;	
   }
-  
-  /* ha hosszú kód (pl. 15+ karakter), kisebb betűméret */
-  .product-info p.long {
-    font-size: 12px;
-    letter-spacing: -0.2px; /* finomítás, hogy jobban elférjen */
-  }
-  
+
   .lightbox {
     display: none;
     position: fixed;
@@ -160,14 +158,12 @@
     justify-content: center;
     align-items: center;
   }
-
   .lightbox img {
     max-width: 90%;
     max-height: 90%;
     border: 5px solid #fff;
     border-radius: 5px;
   }
-
   .lightbox:target { display: flex; }
 
   .back-btn {
@@ -261,7 +257,7 @@
         <span class="device-label device-tv">TV</span>
       </div>
       <div class="product-info">
-        <p class="remote-code">AKB729152071538M</p>
+        <p>398GR10BEPHN001</p>
         <p>Bruttó: 5.800 Ft</p>
       </div>
     </div>
@@ -275,7 +271,7 @@
         <span class="device-label device-dvd">DVD</span>
       </div>
       <div class="product-info">
-        <p>398GR10BEPHN0016JK</p>
+        <p>398GR10BEPHN0016</p>
         <p>Bruttó: 5.800 Ft</p>
       </div>
     </div>
@@ -289,7 +285,7 @@
         <span class="device-label device-vcr">VCR</span>
       </div>
       <div class="product-info">
-        <p class="remote-code">AKB72915207153</p>
+        <p>398GR10BEPHN0016J</p>
         <p>Bruttó: 5.800 Ft</p>
       </div>
     </div>
@@ -303,7 +299,7 @@
         <span class="device-label device-sat">SAT</span>
       </div>
       <div class="product-info">
-        <p class="remote-code">AKB7291520715</p>
+        <p>398GR10BEPHN0016JK</p>
         <p>Bruttó: 5.800 Ft</p>
       </div>
     </div>
@@ -317,7 +313,7 @@
         <span class="device-label device-stb">STB</span>
       </div>
       <div class="product-info">
-        <p class="remote-code">AKB729152071538M2</p>
+        <p>398GR10BEPHN</p>
         <p>Bruttó: 5.800 Ft</p>
       </div>
     </div>
@@ -331,7 +327,7 @@
         <span class="device-label device-hifi">HIFI</span>
       </div>
       <div class="product-info">
-        <p class="remote-code">AKB729152071538M25</p>
+        <p>EN2D27</p>
         <p>Bruttó: 5.800 Ft</p>
       </div>
     </div>
@@ -345,7 +341,7 @@
         <span class="device-label device-tv">TV</span>
       </div>
       <div class="product-info">
-        <p class="remote-code">AKB72915207</p>
+        <p>EN2F30H</p>
         <p>Bruttó: 5.800 Ft</p>
       </div>
     </div>
@@ -359,7 +355,7 @@
         <span class="device-label device-tv">TV</span>
       </div>
       <div class="product-info">
-        <p class="remote-code">AKB72915207</p>
+        <p>EN2G30H</p>
         <p>Bruttó: 5.800 Ft</p>
       </div>
     </div>
@@ -373,7 +369,7 @@
         <span class="device-label device-tv">TV</span>
       </div>
       <div class="product-info">
-        <p class="remote-code">AKB72915207</p>
+        <p>EN2X27HS</p>
         <p>Bruttó: 5.800 Ft</p>
       </div>
     </div>
@@ -387,7 +383,7 @@
         <span class="device-label device-tv">TV</span>
       </div>
       <div class="product-info">
-        <p class="remote-code">AKB72915207</p>
+        <p>EN2X30H</p>
         <p>Bruttó: 5.800 Ft</p>
       </div>
     </div>
@@ -401,7 +397,7 @@
         <span class="device-label device-tv">TV</span>
       </div>
       <div class="product-info">
-        <p class="remote-code">AKB72915207</p>
+        <p>EN2W30H</p>
         <p>Bruttó: 5.800 Ft</p>
       </div>
     </div>
@@ -415,7 +411,7 @@
         <span class="device-label device-tv">TV</span>
       </div>
       <div class="product-info">
-        <p class="remote-code">AKB72915207</p>
+        <p>EN2Y30H</p>
         <p>Bruttó: 5.800 Ft</p>
       </div>
     </div>
@@ -429,7 +425,7 @@
         <span class="device-label device-tv">TV</span>
       </div>
       <div class="product-info">
-        <p class="remote-code">AKB72915207</p>
+        <p>EN3A38</p>
         <p>Bruttó: 5.800 Ft</p>
       </div>
     </div>
@@ -443,7 +439,7 @@
         <span class="device-label device-tv">TV</span>
       </div>
       <div class="product-info">
-        <p class="remote-code">AKB72915207</p>
+        <p>EN3AA39H</p>
         <p>Bruttó: 5.800 Ft</p>
       </div>
     </div>
@@ -457,7 +453,7 @@
         <span class="device-label device-tv">TV</span>
       </div>
       <div class="product-info">
-        <p class="remote-code">AKB72915207</p>
+        <p>EN3B39</p>
         <p>Bruttó: 5.800 Ft</p>
       </div>
     </div>
@@ -471,7 +467,7 @@
         <span class="device-label device-tv">TV</span>
       </div>
       <div class="product-info">
-        <p class="remote-code">AKB72915207</p>
+        <p>EN33928HS</p>
         <p>Bruttó: 5.800 Ft</p>
       </div>
     </div>
@@ -485,7 +481,7 @@
         <span class="device-label device-tv">TV</span>
       </div>
       <div class="product-info">
-        <p class="remote-code">AKB72915207</p>
+        <p>ERF2F60G</p>
         <p>Bruttó: 5.800 Ft</p>
       </div>
     </div>
@@ -499,7 +495,7 @@
         <span class="device-label device-tv">TV</span>
       </div>
       <div class="product-info">
-        <p class="remote-code">AKB72915207</p>
+        <p>ERF2J36H</p>
         <p>Bruttó: 5.800 Ft</p>
       </div>
     </div>
@@ -513,7 +509,7 @@
         <span class="device-label device-tv">TV</span>
       </div>
       <div class="product-info">
-        <p class="remote-code">AKB72915207</p>
+        <p>ER-22601B</p>
         <p>Bruttó: 5.800 Ft</p>
       </div>
     </div>
@@ -527,7 +523,7 @@
         <span class="device-label device-tv">TV</span>
       </div>
       <div class="product-info">
-        <p class="remote-code">AKB72915207</p>
+        <p>ER-33903HS</p>
         <p>Bruttó: 5.800 Ft</p>
       </div>
     </div>
@@ -541,7 +537,7 @@
         <span class="device-label device-tv">TV</span>
       </div>
       <div class="product-info">
-        <p class="remote-code">AKB72915207</p>
+        <p>ERF3A72</p>
         <p>Bruttó: 5.800 Ft</p>
       </div>
     </div>
@@ -555,7 +551,7 @@
         <span class="device-label device-tv">TV</span>
       </div>
       <div class="product-info">
-        <p class="remote-code">AKB72915207</p>
+        <p>ERF3B72H</p>
         <p>Bruttó: 5.800 Ft</p>
       </div>
     </div>
@@ -569,7 +565,7 @@
         <span class="device-label device-tv">TV</span>
       </div>
       <div class="product-info">
-        <p class="remote-code">AKB72915207</p>
+        <p>ERF3B80H</p>
         <p>Bruttó: 5.800 Ft</p>
       </div>
     </div>
@@ -583,7 +579,7 @@
         <span class="device-label device-tv">TV</span>
       </div>
       <div class="product-info">
-        <p class="remote-code">AKB72915207</p>
+        <p>ERF6A64</p>
         <p>Bruttó: 5.800 Ft</p>
       </div>
     </div>
@@ -597,7 +593,7 @@
         <span class="device-label device-tv">TV</span>
       </div>
       <div class="product-info">
-        <p class="remote-code">AKB72915207</p>
+        <p>ERF6B62H</p>
         <p>Bruttó: 5.800 Ft</p>
       </div>
     </div>
@@ -793,17 +789,6 @@
     }
   });
   
-  // 🔹 Automatikus betűméret állítás a hosszú típusokhoz
-  document.addEventListener('DOMContentLoaded', function() {
-    const maxLength = 15; // 15 karakter felett váltson kisebb betűre
-    document.querySelectorAll('.product-info p.remote-code').forEach(el => {
-      const textLength = el.textContent.replace(/\s+/g, '').length;
-      if (textLength > maxLength) {
-        el.classList.add('long');
-    }
-  });
-});
-	  
 </script>
 </body>
 </html>
