@@ -39,6 +39,7 @@
     background-color: #FFFFCC;
     text-align: center;
     padding: 5px;
+	border-bottom: 1px solid #aaa; /* Az új elválasztó vonal */
   }
   nav a {
     margin: 0 5px;
@@ -59,12 +60,18 @@
   aside {
     flex: 0 0 153px;
     background: #FFFFCC;
-	border: 1px solid #aaa;   /* vékony, világosszürke keret */
+	border: 1px solid #aaa;		/* vékony, világosszürke keret */
     padding: 10px;
     border-radius: 5px;
     margin-left: 10px;
   }
-  aside h3 { margin-top: 0; font-size: 16px; }
+  aside h3 { 
+    margin-top: 0;
+	font-size: 16px;
+	padding-bottom: 5px;		/* kis tér a vonal felett */
+    border-bottom: 1px solid #111;  /* vékony elválasztó vonal */
+    margin-bottom: 5px;			/* kis tér a vonal alatt */
+  }
   aside ul { list-style: none; padding: 0; margin: 0; }
   aside ul li { margin-bottom: 5px; }
   aside ul li a {
