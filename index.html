@@ -76,18 +76,14 @@
   aside ul li { margin-bottom: 5px; }
   aside ul li a {
     text-decoration: none;
+    color: #000;
     font-size: 14px;
-    font-weight: bold;
-    color: #000; /* Alapértelmezett szín */
+	font-weight: bold;         /* félkövér (BOLD) */
   }
-  aside ul li a:visited { 
-    color: #000; /* Meglátogatott szín */
+  aside ul li a:hover { 
+    color: #CC0000; 		   /* hoverre piros, ha akarod */
+	text-decoration: none;     /* hoverkor se legyen aláhúzva */
   }
-  aside ul li a:hover,
-  aside ul li a:active { 
-    color: #CC0000; /* Hover és Active szín */
-  }
-  
   .content-area {
     display: flex;
     flex-direction: column;
@@ -497,7 +493,6 @@
         window.scrollTo(0, lastScrollY); // visszagörgetés
       });
   // --- ÚJ KÓD A LINK PROBLÉMÁRA ---
-  
   // Főleg iOS/Android böngészőkre: 
   // Amikor az oldal "megjelenik" (visszatérünk rá egy másik lapról),
   // győződjünk meg róla, hogy az összes aside link fekete.
