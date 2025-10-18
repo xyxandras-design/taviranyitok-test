@@ -39,7 +39,7 @@
     background-color: #FFFFCC;
     text-align: center;
     padding: 5px;
-	border-bottom: 1px solid #aaa; /* Az új elválasztó vonal */
+	border-bottom: 1px solid #aaa;	/* Az új elválasztó vonal */
   }
   nav a {
     margin: 0 5px;
@@ -60,7 +60,7 @@
   aside {
     flex: 0 0 153px;
     background: #FFFFCC;
-	border: 1px solid #aaa;		/* vékony, világosszürke keret */
+	border: 1px solid #aaa;			/* vékony, világosszürke keret */
     padding: 10px;
     border-radius: 5px;
     margin-left: 10px;
@@ -68,22 +68,30 @@
   aside h3 { 
     margin-top: 0;
 	font-size: 16px;
-	padding-bottom: 5px;		/* kis tér a vonal felett */
+	padding-bottom: 5px;			/* kis tér a vonal felett */
     border-bottom: 1px solid #111;  /* vékony elválasztó vonal */
-    margin-bottom: 5px;			/* kis tér a vonal alatt */
+    margin-bottom: 5px;				/* kis tér a vonal alatt */
   }
   aside ul { list-style: none; padding: 0; margin: 0; }
   aside ul li { margin-bottom: 5px; }
   aside ul li a {
     text-decoration: none;
-    color: #000;
     font-size: 14px;
-	font-weight: bold;         /* félkövér (BOLD) */
+	font-weight: bold;				/* félkövér (BOLD) */
+  }
+  aside ul li a:link {				/* LVHA sorrend betartása a konzisztens viselkedésért */
+  	color: #000;
+  }									/* Alapértelmezett szín (link) */
+  aside ul li a:visited { 
+    color: #000;					/* Meglátogatott link színe is fekete maradjon */
   }
   aside ul li a:hover { 
-    color: #CC0000; 		   /* hoverre piros, ha akarod */
-	text-decoration: none;     /* hoverkor se legyen aláhúzva */
+    color: #CC0000;					/* Csak ráhúzáskor (hover) legyen piros */
   }
+  aside ul li a:active { 
+    color: #CC0000;					/* Kattintás pillanatában (active) is piros */
+  }
+  
   .content-area {
     display: flex;
     flex-direction: column;
@@ -116,11 +124,11 @@
   .product-item {
     width: 175px;
     text-align: center;
-    border: 1px solid #aaa;     /* vékony, világosszürke keret */
-    border-radius: 6px;         /* enyhe lekerekítés, mint a boxnál */
-    padding: 0px;               /* kis belső tér a tartalom körül */
-    background: #f9f9f9;        /* enyhe háttér a jobb elkülönítéshez */
-    box-sizing: border-box;     /* hogy a méret ne változzon */
+    border: 1px solid #aaa;				/* vékony, világosszürke keret */
+    border-radius: 6px;					/* enyhe lekerekítés, mint a boxnál */
+    padding: 0px;						/* kis belső tér a tartalom körül */
+    background: #f9f9f9;				/* enyhe háttér a jobb elkülönítéshez */
+    box-sizing: border-box;				/* hogy a méret ne változzon */
   }
   .product-box {
     position: relative;
@@ -200,7 +208,7 @@
     position: absolute;
     bottom: 6px;
     left: 6px;
-    background-color: #006666; /* Alap: TV */
+    background-color: #006666;				/* Alap: TV */
     color: #fff;
     font-size: 11px;
     font-weight: bold;
@@ -315,8 +323,7 @@
   <div class="content-area">
     <section class="info-box">
       <p>Üdvözlöm az oldalam látogatóit!</p>
-      <p>Első lépésként a bal oldali listából vagy a lejjebb található ajánlatokból választhat. A megjelenő képek alapján beazonosíthatja a keresett típust. Az információ és a speciális menüben a helyettesítő típusokról olvashat bővebben. A lejjebb található távirányító ajánlatok között, az ismertebb gyártmányok legkeresettebb típusai között válogathat. A nagyító ikon használatával alaposabban szemügyre veheti a távirányító funkcióit. A képre kattintással pedig továbbléphet a konkrét rendelés felé. Az utolsó menüpont segítségével az új webáruházamba jut át, ahol többek között a készülékek modellszámaira is rákereshet. <br>
-Kellemes bögészést kívánok mindenkinek!</p>
+      <p>Első lépésként a bal oldali listából vagy a lejjebb található ajánlatokból választhat. A megjelenő képek alapján beazonosíthatja a keresett típust. Az információ és a speciális menüben a helyettesítő típusokról olvashat bővebben. A lejjebb található távirányító ajánlatok között, az ismertebb gyártmányok legkeresettebb típusai között válogathat. A nagyító ikon használatával alaposabban szemügyre veheti a távirányító funkcióit. A képre kattintással pedig továbbléphet a konkrét rendelés felé. Az utolsó menüpont segítségével az új webáruházamba jut át, ahol többek között a készülékek modellszámaira is rákereshet. Kellemes bögészést kívánok mindenkinek!</p>
     </section>
 
     <div class="product-grid">
