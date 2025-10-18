@@ -492,6 +492,9 @@
         document.body.style.width = '';
         window.scrollTo(0, lastScrollY); // visszagörgetés
       });
+    }
+  });
+  
   // --- ÚJ KÓD A LINK PROBLÉMÁRA ---
   // Főleg iOS/Android böngészőkre: 
   // Amikor az oldal "megjelenik" (visszatérünk rá egy másik lapról),
@@ -502,7 +505,7 @@
       const asideLinks = document.querySelectorAll('aside ul li a');
       asideLinks.forEach(link => {
         link.style.color = '#000000'; // Manuálisan visszaállítjuk feketére
-	  });
+      });
     }
   });
 </script>
