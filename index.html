@@ -75,20 +75,19 @@
   aside ul { list-style: none; padding: 0; margin: 0; }
   aside ul li { margin-bottom: 5px; }
   aside ul li a {
-    color: #000;
     text-decoration: none;
+    color: #000;
     font-size: 14px;
     font-weight: bold;
+    transition: color 0.2s ease;
   }
 
-  /* Hoverkor */
   aside ul li a:hover {
-    color: #CC0000;
+    color: #CC0000; /* hoverkor piros */
   }
 
-  /* Ha a böngésző "pirosan hagyta" (visited), JS-ellenjavításként ez az osztály jön */
-  aside ul li a.visited-fix {
-    color: #000 !important;
+  aside ul li a:visited {
+    color: #000; /* kattintás után is fekete marad */
   }
 
   .content-area {
@@ -501,23 +500,6 @@
       });
     }
   });
-  
-  // --- Fekete link reset minden visszatéréskor ---
-  function resetAsideLinkColors() {
-    const asideLinks = document.querySelectorAll('aside ul li a');
-    asideLinks.forEach(link => {
-      link.style.color = '#000'; // mindig fekete
-    });
-  }
-
-  // Normál betöltéskor is
-  window.addEventListener('load', resetAsideLinkColors);
-
-  // Ha a cache-ből térünk vissza (iOS / Android)
-  window.addEventListener('pageshow', function() {
-    setTimeout(resetAsideLinkColors, 50); // kis késleltetés, hogy biztosan frissüljön
-  });
-  
 </script>
 </body>
 </html>
