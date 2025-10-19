@@ -75,15 +75,22 @@
   aside ul { list-style: none; padding: 0; margin: 0; }
   aside ul li { margin-bottom: 5px; }
   aside ul li a {
-    text-decoration: none;
     color: #000;
+    text-decoration: none;
     font-size: 14px;
-	font-weight: bold;         /* félkövér (BOLD) */
+    font-weight: bold;
   }
-  aside ul li a:hover { 
-    color: #CC0000; 		   /* hoverre piros, ha akarod */
-	text-decoration: none;     /* hoverkor se legyen aláhúzva */
+
+  /* Hoverkor */
+  aside ul li a:hover {
+    color: #CC0000;
   }
+
+  /* Ha a böngésző "pirosan hagyta" (visited), JS-ellenjavításként ez az osztály jön */
+  aside ul li a.visited-fix {
+    color: #000 !important;
+  }
+
   .content-area {
     display: flex;
     flex-direction: column;
