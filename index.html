@@ -190,23 +190,26 @@
   }
   .close-lightbox {
     position: absolute;
-    top: 15px;
-    right: 25px;
-    background: rgba(255,255,255,0.9);
+    top: 20px;
+    right: 30px;
+    background-color: #006666;  /* főszín */
+    color: #ffffff;             /* X színe alapból fehér */
     border: none;
-    border-radius: 50%;
-    font-size: 20px;
+    font-size: 26px;            /* picit nagyobb az egyensúly kedvéért */
     font-weight: bold;
     cursor: pointer;
-    width: 35px;
-    height: 35px;
-    line-height: 35px;
-    text-align: center;
-    color: #333;
+    border-radius: 50%;
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;        /* függőleges középre igazítás */
+    justify-content: center;    /* vízszintes középre igazítás */
+    transition: color 0.3s ease; /* csak a szín váltása animált */
+    z-index: 1001;
+    line-height: 1;             /* segít pontos középre hozni az X-et */
   }
   .close-lightbox:hover {
-    background: rgba(255,255,255,1);
-    color: #CC0000;
+    color: #CC0000;  /* csak az X színe változik hover esetén */
   }
 
   footer {
@@ -443,42 +446,42 @@
 
 <!-- Lightbox képek -->
 <div id="img1" class="lightbox">
-  <button class="close-lightbox">×</button>
+  <button class="close-lightbox" aria-label="Bezárás">×</button>
   <a href="javascript:void(0);">
     <img src="media/hisense-taviranyitok/en2a30.jpg" alt="EN2A30 távirányító nagy kép">
   </a>
 </div>
 
 <div id="img2" class="lightbox">
-  <button class="close-lightbox">×</button>
+  <button class="close-lightbox" aria-label="Bezárás">×</button>
   <a href="javascript:void(0);">
     <img src="media/hisense-taviranyitok/en2ak27h.jpg" alt="EN2AK27H távirányító nagy kép">
   </a>
 </div>
 
 <div id="img3" class="lightbox">
-  <button class="close-lightbox">×</button>
+  <button class="close-lightbox" aria-label="Bezárás">×</button>
   <a href="javascript:void(0);">
     <img src="media/hisense-taviranyitok/en2bb27h.jpg" alt="EN2BB27H távirányító nagy kép">
   </a>
 </div>
 
 <div id="img4" class="lightbox">
-  <button class="close-lightbox">×</button>
+  <button class="close-lightbox" aria-label="Bezárás">×</button>
   <a href="javascript:void(0);">
     <img src="media/hisense-taviranyitok/en2bf27h.jpg" alt="EN2BF27H távirányító nagy kép">
   </a>
 </div>
 
 <div id="img5" class="lightbox">
-  <button class="close-lightbox">×</button>
+  <button class="close-lightbox" aria-label="Bezárás">×</button>
   <a href="javascript:void(0);">
     <img src="media/hisense-taviranyitok/en2bi27h.jpg" alt="EN2BI27H távirányító nagy kép">
   </a>
 </div>
 
 <div id="img6" class="lightbox">
-  <button class="close-lightbox">×</button>
+  <button class="close-lightbox" aria-label="Bezárás">×</button>
   <a href="javascript:void(0);">
     <img src="media/hisense-taviranyitok/en2d27.jpg" alt="EN2D27 távirányító nagy kép">
   </a>
