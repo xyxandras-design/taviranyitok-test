@@ -495,19 +495,22 @@
     }
   });
   
-  // --- ÚJ KÓD A LINK PROBLÉMÁRA ---
-  // Főleg iOS/Android böngészőkre: 
-  // Amikor az oldal "megjelenik" (visszatérünk rá egy másik lapról),
-  // győződjünk meg róla, hogy az összes aside link fekete.
-  window.addEventListener('pageshow', function(event) {
-    // Ez a feltétel ellenőrzi, hogy nem egy cachelt "forward" navigációból jöttünk-e
-    if (event.persisted) { 
-      const asideLinks = document.querySelectorAll('aside ul li a');
-      asideLinks.forEach(link => {
-        link.style.color = '#000000'; // Manuálisan visszaállítjuk feketére
-      });
-    }
+  // --- Fekete link reset minden visszatéréskor ---
+  function resetAsideLinkColors() {
+    const asideLinks = document.querySelectorAll('aside ul li a');
+    asideLinks.forEach(link => {
+      link.style.color = '#000'; // mindig fekete
+    });
+  }
+
+  // Normál betöltéskor is
+  window.addEventListener('load', resetAsideLinkColors);
+
+  // Ha a cache-ből térünk vissza (iOS / Android)
+  window.addEventListener('pageshow', function() {
+    setTimeout(resetAsideLinkColors, 50); // kis késleltetés, hogy biztosan frissüljön
   });
+  
 </script>
 </body>
 </html>
