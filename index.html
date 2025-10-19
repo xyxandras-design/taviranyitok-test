@@ -220,6 +220,24 @@
   .device-tape { background-color: #a19a1b; }
   .device-amp { background-color: #990099; }
   
+  /* Gyártólink alapstílus */
+  aside ul li a {
+    color: #000;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  /* Hoverkor */
+  aside ul li a:hover {
+    color: #CC0000;
+  }
+
+  /* Ha a böngésző "pirosan hagyta" (visited), JS-ellenjavításként ez az osztály jön */
+  aside ul li a.visited-fix {
+    color: #000 !important;
+  }
+
 </style>
 </head>
 <body>
@@ -495,12 +513,20 @@
     }
   });
   
-  document.addEventListener("DOMContentLoaded", function () {
-  const links = document.querySelectorAll("nav a");
-  links.forEach((link) => {
-    link.style.color = "";
+  // --- Szín reset a gyártók linkjein ---
+  function resetAsideLinkColors() {
+    const asideLinks = document.querySelectorAll('aside ul li a');
+    asideLinks.forEach(link => {
+      link.classList.remove('visited-fix'); // töröljük a piros stílust
+    });
+  }
+
+  // Betöltéskor és cache-ből visszatéréskor
+  window.addEventListener('load', resetAsideLinkColors);
+  window.addEventListener('pageshow', function() {
+    setTimeout(resetAsideLinkColors, 50);
   });
-});
+  
 </script>
 </body>
 </html>
