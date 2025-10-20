@@ -2,25 +2,27 @@
 <html lang="hu">
 <head>
 <meta charset="UTF-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self'; script-src 'self' 'unsafe-inline';">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="format-detection" content="telephone=no">
 <title>Cikk oldal</title>
 <style>
+	
+  html {
+    overflow-y: scroll;
+  }
   body {
     font-family: Tahoma, Verdana, Arial, sans-serif;
     margin: 0;
     padding: 0;
     background: #f0f0f0;
   }
-
   .container {
-    max-width: 970px;
+    max-width: 1120px;
     margin: 0 auto;
     border: 1px solid #000;
     background: #fff;
   }
-
-  /* Fejléc */
   .header-container {
     display: flex;
     justify-content: center;
@@ -30,34 +32,28 @@
     padding: 10px;
     height: 70px;
   }
-
-  .header-center {
-    text-align: center;
-  }
-
-  .header-center h1 { margin: 0; font-size: 22px; }
-  .header-center p { margin: 0; font-size: 13px; }
+  .header-center { text-align: center; }
+  .header-center h1 { margin: 0; font-size: 23px; }
+  .header-center p { margin: 0; font-size: 16px; }
 
   nav {
     background-color: #FFFFCC;
     text-align: center;
     padding: 5px;
+	border-bottom: 1px solid #aaa; /* Az új elválasztó vonal */
   }
-
   nav a {
     margin: 0 5px;
     text-decoration: none;
     color: #000;
     font-weight: bold;
   }
-
   nav a:hover { color: #CC0000; }
 
-  /* Szövegdoboz */
   .info-box {
     background-color: #006666;
     color: #fff;
-    padding: 10px;
+    padding: 5px 10px 10px 10px; /* Felül kevesebb tér */
     margin: 10px;
     border-radius: 5px;
   }
@@ -91,8 +87,7 @@
     text-align: center;
     padding: 10px;
   }
-
-  p { line-height: 1.5; }
+ 
 </style>
 </head>
 <body>
@@ -103,7 +98,7 @@
   <div class="header-container">
     <div class="header-center">
       <h1>Speciális távirányítók</h1>
-      <p>Mobil: +36-30-7562289</p>
+      <p>Mobil: +36-30-7562289 /Viber/</p>
     </div>
   </div>
 </header>
@@ -117,13 +112,12 @@
   <a href="erdekes.html">Érdekes</a>
   <a href="specialis.html">Speciális</a>
   <a href="kapcsolat.html">Kapcsolat</a>
-  <a href="https://www.taviranyitok.hu" target="_blank">Webáruház</a>
+  <a href="https://www.taviranyitok.hu" target="_blank" rel="noopener noreferrer">Webáruház</a>
 </nav>
 
 <div class="info-box">
   <p>Szinte minden gyártónál látható az alábbi 3 távirányító az eredeti mellett utángyártott típusként. 
-  Ezeket a távirányítókat főleg tévék, DVD lejátszók, házimozik, és egyéb eszközök irányításához lehet használni. 
-  Több különböző készülék kezelésére is alkalmasak.</p>
+  Ezeket a távirányítókat főleg tévék, DVD lejátszók, házimozik, és egyéb eszközök irányításához lehet használni. Több különböző készülék kezelésére is alkalmasak.</p>
 
   <table>
     <tr>
