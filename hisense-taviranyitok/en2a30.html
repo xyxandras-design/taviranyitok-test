@@ -2,9 +2,10 @@
 <html lang="hu">
 <head>
 <meta charset="UTF-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self'; script-src 'self' 'unsafe-inline';">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="format-detection" content="telephone=no">
-<title>EN2A30 távirányító</title>
+<title>HISENSE EN2A30 távirányító</title>
 <style>
 
   html {
@@ -22,7 +23,6 @@
     border: 1px solid #000;
     background: #fff;
   }
-  /* Fejléc */
   .header-container {
     display: flex;
     justify-content: center;
@@ -51,6 +51,7 @@
   nav a:hover { color: #CC0000; }
 
   .breadcrumb {
+	font-family: Tahoma, Verdana, Arial, sans-serif;
     font-size: 14px;
     color: #006666;
     padding: 8px 0 0 10px;
@@ -66,7 +67,7 @@
   .info-box {
     background-color: #006666;
     color: #fff;
-    padding: 10px;
+    padding: 5px 10px 10px 10px; /* Felül kevesebb tér */
     margin: 10px;
     border-radius: 5px;
   }
@@ -83,7 +84,6 @@
     background: #fff;
     border-radius: 5px;
   }
-
   .product-grid {
     display: flex;
     flex-wrap: wrap;
@@ -122,22 +122,23 @@
     cursor: pointer;
     transition: transform 0.2s ease;
   }
-
   .zoom-icon { 
     left: 5px;
 	background: rgba(255,255,255,0.8);
 	border-radius: 50%;
-	display: flex; align-items: center;
+	display: flex;
+	align-items: center;
 	justify-content: center;
 	font-size: 14px;
 	text-decoration: none;
-	}
-	
-  .pdf-icon { right: 5px; }
-
+  }
+  .pdf-icon {
+    right: 5px; 
+  }
   .pdf-icon:hover,
   .zoom-icon:hover {
-    transform: scale(1.1); }
+    transform: scale(1.1); 
+  }
 
   .product-info {
     margin-top: 3px;
@@ -204,7 +205,6 @@
     border-radius: 3px;
     pointer-events: none;
   }
-
   /* Színváltozatok */
   .device-tv { background-color: #006666; }
   .device-dvd { background-color: #0044cc; }
@@ -249,7 +249,7 @@
   <div class="product-grid">
     <div class="product-item">
       <div class="product-box">
-        <a href="https://www.taviranyitok.hu/hisense-taviranyitok/hisense-en2a30-taviranyito-eredeti-adatlap" target="_blank">
+        <a href="https://www.taviranyitok.hu/hisense-taviranyitok/hisense-en2a30-taviranyito-eredeti-adatlap" target="_blank" rel="noopener noreferrer">
           <img src="../media/hisense-taviranyitok/en2a30_pici.jpg" alt="HISENSE EN2A30 távirányító">
         </a>
         <a href="#img1" class="zoom-icon">🔎</a>
@@ -263,7 +263,7 @@
 
     <div class="product-item">
       <div class="product-box">
-        <a href="https://www.taviranyitok.hu/hisense-taviranyitok/hisense-en2a30-taviranyito-utangyartott-adatlap" target="_blank">
+        <a href="https://www.taviranyitok.hu/hisense-taviranyitok/hisense-en2a30-taviranyito-utangyartott-adatlap" target="_blank" rel="noopener noreferrer">
           <img src="../media/kep/alien5_pici.jpg" alt="Utángyártott">
         </a>
         <a href="#img2" class="zoom-icon">🔎</a>
@@ -279,7 +279,7 @@
 
     <div class="product-item">
       <div class="product-box">
-        <a href="https://www.taviranyitok.hu/hisense-taviranyitok/hisense-en2a30-taviranyito-utangyartott1-adatlap" target="_blank">
+        <a href="https://www.taviranyitok.hu/hisense-taviranyitok/hisense-en2a30-taviranyito-utangyartott1-adatlap" target="_blank" rel="noopener noreferrer">
           <img src="../media/kep/alien4_pici.jpg" alt="Utángyártott 1">
         </a>
         <a href="#img3" class="zoom-icon">🔎</a>
@@ -300,19 +300,19 @@
 <!-- Lightbox képek -->
 <div id="img1" class="lightbox">
   <a href="javascript:void(0);">
-    <img src="../media/hisense-taviranyitok/en2a30.jpg" alt="EN2A30 nagy kép">
+    <img src="../media/hisense-taviranyitok/en2a30.jpg" alt="EN2A30 távirányító nagy kép">
   </a>
 </div>
 
 <div id="img2" class="lightbox">
   <a href="javascript:void(0);">
-    <img src="../media/kep/alien5.jpg" alt="Utángyártott nagy kép">
+    <img src="../media/kep/alien5.jpg" alt="Utángyártott távirányító nagy kép">
   </a>
 </div>
 
 <div id="img3" class="lightbox">
   <a href="javascript:void(0);">
-    <img src="../media/kep/alien4.jpg" alt="Utángyártott1 nagy kép">
+    <img src="../media/kep/alien4.jpg" alt="Utángyártott1 távirányító nagy kép">
   </a>
 </div>
 
