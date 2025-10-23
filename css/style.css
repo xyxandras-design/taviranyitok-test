@@ -1,0 +1,244 @@
+@charset "utf-8";
+/* === style.css === */
+/* Alap HTML és BODY beállítások */
+html {
+  overflow-y: scroll;
+}
+body {
+  font-family: Tahoma, Verdana, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f0f0f0;
+}
+
+/* Fő konténer */
+.container {
+  max-width: 1120px;
+  margin: 0 auto;
+  border: 1px solid #000;
+  background: #fff;
+}
+
+/* Fejléc */
+.header-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #006666;
+  color: #fff;
+  padding: 10px;
+  height: 70px;
+}
+.header-center {
+  text-align: center;
+}
+.header-center h1 {
+  margin: 0;
+  font-size: 23px;
+}
+.header-center p {
+  margin: 0;
+  font-size: 16px;
+}
+
+/* Navigációs menü */
+nav {
+  background-color: #FFFFCC;
+  text-align: center;
+  padding: 5px;
+  border-bottom: 1px solid #aaa;
+}
+nav a {
+  margin: 0 5px;
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+nav a:hover {
+  color: #CC0000;
+}
+
+/* Útvonaljelző (breadcrumb) */
+.breadcrumb {
+  font-family: Tahoma, Verdana, Arial, sans-serif;
+  font-size: 14px;
+  color: #006666;
+  padding: 8px 0 0 10px;
+  margin: 0;
+}
+.breadcrumb a,
+.breadcrumb span {
+  color: #006666;
+  text-decoration: none;
+  font-weight: bold;
+}
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+/* Info box */
+.info-box {
+  background-color: #006666;
+  color: #fff;
+  padding: 5px 10px 10px 10px;
+  margin: 10px;
+  border-radius: 5px;
+}
+.info-box p {
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* Fő tartalomrész */
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  background: #fff;
+  border-radius: 5px;
+}
+
+/* Termék grid */
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 10px;
+}
+.product-item {
+  width: 175px;
+  text-align: center;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+  padding: 0;
+  background: #f9f9f9;
+  box-sizing: border-box;
+}
+
+/* Termékdoboz */
+.product-box {
+  position: relative;
+  background: #eee;
+  padding: 8px 10px 6px 10px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  min-height: 230px;
+}
+.product-box img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Ikonok (zoom, PDF) */
+.zoom-icon,
+.pdf-icon {
+  position: absolute;
+  top: 5px;
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+.zoom-icon {
+  left: 5px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  text-decoration: none;
+}
+.pdf-icon {
+  right: 5px;
+}
+.pdf-icon:hover,
+.zoom-icon:hover {
+  transform: scale(1.1);
+}
+
+/* Termékinformáció */
+.product-info {
+  margin-top: 3px;
+}
+.product-info p {
+  margin: 3px 0;
+  background: #eee;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.2;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/* Lightbox */
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+}
+.lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+  border: 5px solid #fff;
+  border-radius: 5px;
+}
+
+/* Vissza gomb */
+.back-btn {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  background: #006666;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 15px;
+}
+.back-btn:hover {
+  background: #004c4c;
+}
+
+/* Lábléc */
+footer {
+  background-color: #006666;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Eszköz címkék */
+.device-label {
+  position: absolute;
+  bottom: 6px;
+  left: 6px;
+  background-color: #006666;
+  color: #fff;
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding: 2px 6px;
+  border-radius: 3px;
+  pointer-events: none;
+}
+
+/* Színvariációk */
+.device-tv { background-color: #006666; }
+.device-dvd { background-color: #0044cc; }
+.device-vcr { background-color: #8b4513; }
+.device-sat { background-color: #ff6600; }
+.device-stb { background-color: #ff3300; }
+.device-hifi { background-color: #e4af37; }
+.device-cd { background-color: #5cb123; }
+.device-tape { background-color: #a19a1b; }
+.device-amp { background-color: #990099; }
