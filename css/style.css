@@ -1,5 +1,6 @@
 @charset "utf-8";
-/* === style.css === */
+/* === style.css - összevont és tiszta verzió === */
+
 /* Alap HTML és BODY beállítások */
 html {
   overflow-y: scroll;
@@ -58,22 +59,51 @@ nav a:hover {
   color: #CC0000;
 }
 
-/* Útvonaljelző (breadcrumb) */
-.breadcrumb {
-  font-family: Tahoma, Verdana, Arial, sans-serif;
-  font-size: 14px;
-  color: #006666;
-  padding: 8px 0 0 10px;
-  margin: 0;
+/* Fő tartalomrész */
+main {
+  display: flex;
+  gap: 10px;
+  padding: 10px 0;
+  align-items: flex-start;
+  flex-wrap: wrap;
 }
-.breadcrumb a,
-.breadcrumb span {
-  color: #006666;
+
+/* Oldalsáv */
+aside {
+  flex: 0 0 153px;
+  background: #FFFFCC;
+  border: 1px solid #aaa;
+  padding: 10px;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+aside h3 { 
+  margin-top: 0;
+  font-size: 16px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #111;
+  margin-bottom: 5px;
+}
+aside ul { list-style: none; padding: 0; margin: 0; }
+aside ul li { margin-bottom: 5px; }
+aside ul li a {
   text-decoration: none;
+  color: #000;
+  font-size: 14px;
   font-weight: bold;
 }
-.breadcrumb a:hover {
-  text-decoration: underline;
+aside ul li a:hover { 
+  color: #CC0000;
+  text-decoration: none;
+}
+
+/* Tartalomterület */
+.content-area {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+  margin-right: 10px;
 }
 
 /* Info box */
@@ -81,22 +111,19 @@ nav a:hover {
   background-color: #006666;
   color: #fff;
   padding: 5px 10px 10px 10px;
-  margin: 10px;
+  margin: 0;
   border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.info-box h3 {
+  margin-top: 0;
+  margin-bottom: 6px;
 }
 .info-box p {
   margin: 0;
   line-height: 1.4;
-}
-
-/* Fő tartalomrész */
-main {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  padding: 10px;
-  background: #fff;
-  border-radius: 5px;
 }
 
 /* Termék grid */
@@ -115,8 +142,6 @@ main {
   background: #f9f9f9;
   box-sizing: border-box;
 }
-
-/* Termékdoboz */
 .product-box {
   position: relative;
   background: #eee;
@@ -142,7 +167,7 @@ main {
 }
 .zoom-icon {
   left: 5px;
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(255,255,255,0.8);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -150,13 +175,9 @@ main {
   font-size: 14px;
   text-decoration: none;
 }
-.pdf-icon {
-  right: 5px;
-}
-.pdf-icon:hover,
-.zoom-icon:hover {
-  transform: scale(1.1);
-}
+.pdf-icon { right: 5px; }
+.zoom-icon:hover,
+.pdf-icon:hover { transform: scale(1.1); }
 
 /* Termékinformáció */
 .product-info {
@@ -178,11 +199,9 @@ main {
   display: none;
   position: fixed;
   z-index: 1000;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.8);
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.8);
   justify-content: center;
   align-items: center;
 }
@@ -205,9 +224,7 @@ main {
   cursor: pointer;
   font-size: 15px;
 }
-.back-btn:hover {
-  background: #004c4c;
-}
+.back-btn:hover { background: #004c4c; }
 
 /* Lábléc */
 footer {
@@ -231,14 +248,14 @@ footer {
   border-radius: 3px;
   pointer-events: none;
 }
-
 /* Színvariációk */
 .device-tv { background-color: #006666; }
 .device-dvd { background-color: #0044cc; }
+.device-dvdr { background-color: #001188; }
 .device-vcr { background-color: #8b4513; }
 .device-sat { background-color: #ff6600; }
-.device-stb { background-color: #ff3300; }
-.device-hifi { background-color: #e4af37; }
+.device-stb { background-color: #ff2200; }
+.device-hifi { background-color: #f8af37; }
 .device-cd { background-color: #5cb123; }
 .device-tape { background-color: #a19a1b; }
 .device-amp { background-color: #990099; }
