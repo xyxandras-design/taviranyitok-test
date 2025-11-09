@@ -1,0 +1,184 @@
+[
+  {
+    "gyarto": "dimarson",
+    "tipus": "DIM-01",
+    "device": "tv",
+    "html": "dim-01.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "dimarson",
+    "tipus": "DM-611",
+    "device": "dvd",
+    "html": "dm-611.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "dimarson",
+    "tipus": "DM-LT19HD",
+    "device": "tv",
+    "html": "dm-lt19hd.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "dimarson",
+    "tipus": "DM-LT22FHD",
+    "device": "tv",
+    "html": "dm-lt22fhd.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "dimarson",
+    "tipus": "DM-LT24HD V1",
+    "device": "tv",
+    "html": "dm-lt24hd_v1.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "dimarson",
+    "tipus": "DM-LT24HD V2",
+    "device": "tv",
+    "html": "dm-lt24hd_v2.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "dimarson",
+    "tipus": "DM-LT32FHD",
+    "device": "tv",
+    "html": "dm-lt32fhd.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "dimarson",
+    "tipus": "DM-LT32FHD-SM",
+    "device": "tv",
+    "html": "dm-lt32fhd-sm.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "dimarson",
+    "tipus": "DM-LT32HD V1",
+    "device": "tv",
+    "html": "dm-lt32hd_v1.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "dimarson",
+    "tipus": "DM-LT32HD V2",
+    "device": "tv",
+    "html": "dm-lt32hd_v2.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "dimarson",
+    "tipus": "DM-LT32HD-SM V1",
+    "device": "tv",
+    "html": "dm-lt32hd-sm_v1.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "dimarson",
+    "tipus": "DM-LT32HD-SM V2",
+    "device": "tv",
+    "html": "dm-lt32hd-sm_v2.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "dimarson",
+    "tipus": "DM-LT40FHD",
+    "device": "tv",
+    "html": "dm-lt40fhd.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "dimarson",
+    "tipus": "DM-LT40FHD-SM",
+    "device": "tv",
+    "html": "dm-lt40fhd-sm.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "dimarson",
+    "tipus": "DM-P379",
+    "device": "dvd",
+    "html": "dm-p379.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "dimarson",
+    "tipus": "DM-R300",
+    "device": "dvd",
+    "html": "dm-r300.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "dimarson",
+    "tipus": "DM-R350",
+    "device": "dvd",
+    "html": "dm-r350.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "dimarson",
+    "tipus": "DM-R400",
+    "device": "dvd",
+    "html": "dm-r400.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "dimarson",
+    "tipus": "DM-R410",
+    "device": "dvd",
+    "html": "dm-r410.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "dimarson",
+    "tipus": "DM-R450",
+    "device": "dvd",
+    "html": "dm-r450.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "dimarson",
+    "tipus": "DM-R906",
+    "device": "dvdr",
+    "html": "dm-r906.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "dimarson",
+    "tipus": "DM-R916",
+    "device": "dvdr",
+    "html": "dm-r916.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "dimarson",
+    "tipus": "DM-R956 V1",
+    "device": "dvdr",
+    "html": "dm-r956_v1.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "dimarson",
+    "tipus": "DMR-905",
+    "device": "dvdr",
+    "html": "dmr-905.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "dimarson",
+    "tipus": "ED20DF-05B",
+    "device": "tv",
+    "html": "ed20df-05b.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "dimarson",
+    "tipus": "ED20DF-21G",
+    "device": "tv",
+    "html": "ed20df-21g.html",
+    "price_min": 0
+  }
+]

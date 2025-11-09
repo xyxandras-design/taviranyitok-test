@@ -1,0 +1,107 @@
+[
+  {
+    "gyarto": "celcus",
+    "tipus": "RC1825",
+    "device": "tv",
+    "html": "rc1825.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "celcus",
+    "tipus": "RC1900",
+    "device": "tv",
+    "html": "rc1900.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "celcus",
+    "tipus": "RC1912",
+    "device": "tv",
+    "html": "rc1912.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "celcus",
+    "tipus": "RC3902",
+    "device": "tv",
+    "html": "rc3902.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "celcus",
+    "tipus": "RC43137P",
+    "device": "tv",
+    "html": "rc43137p.html",
+    "price_min": 4800
+  },
+  {
+    "gyarto": "celcus",
+    "tipus": "RC43137P-W",
+    "device": "tv",
+    "html": "rc43137p-w.html",
+    "price_min": 4800
+  },
+  {
+    "gyarto": "celcus",
+    "tipus": "RC4800",
+    "device": "tv",
+    "html": "rc4800.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "celcus",
+    "tipus": "RC4822",
+    "device": "tv",
+    "html": "rc4822.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "celcus",
+    "tipus": "RC4848F",
+    "device": "tv",
+    "html": "rc4848f.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "celcus",
+    "tipus": "RC4848R2",
+    "device": "tv",
+    "html": "rc4848r2.html",
+    "price_min": 4800
+  },
+  {
+    "gyarto": "celcus",
+    "tipus": "RC4870",
+    "device": "tv",
+    "html": "rc4870.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "celcus",
+    "tipus": "RC4900",
+    "device": "tv",
+    "html": "rc4900.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "celcus",
+    "tipus": "RC5103",
+    "device": "tv",
+    "html": "rc5103.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "celcus",
+    "tipus": "RC5117",
+    "device": "tv",
+    "html": "rc5117.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "celcus",
+    "tipus": "RC5118",
+    "device": "tv",
+    "html": "rc5118.html",
+    "price_min": 0
+  }
+]

@@ -1,0 +1,702 @@
+[
+  {
+    "gyarto": "panasonic",
+    "tipus": "EUR511224",
+    "device": "tv",
+    "html": "eur511224.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "panasonic",
+    "tipus": "EUR511300",
+    "device": "tv",
+    "html": "eur511300.html",
+    "price_min": 4800
+  },
+  {
+    "gyarto": "panasonic",
+    "tipus": "EUR511310",
+    "device": "tv",
+    "html": "eur511310.html",
+    "price_min": 4800
+  },
+  {
+    "gyarto": "panasonic",
+    "tipus": "EUR7628010",
+    "device": "tv",
+    "html": "eur7628010.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "panasonic",
+    "tipus": "EUR7628030",
+    "device": "tv",
+    "html": "eur7628030.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "panasonic",
+    "tipus": "EUR7635020R",
+    "device": "tv",
+    "html": "eur7635020r.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "panasonic",
+    "tipus": "EUR7636050",
+    "device": "tv",
+    "html": "eur7636050.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "panasonic",
+    "tipus": "EUR7636080AR",
+    "device": "tv",
+    "html": "eur7636080ar.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "panasonic",
+    "tipus": "EUR7651010A",
+    "device": "tv",
+    "html": "eur7651010a.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "panasonic",
+    "tipus": "EUR765101C",
+    "device": "tv",
+    "html": "eur765101c.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "panasonic",
+    "tipus": "EUR7651030A",
+    "device": "tv",
+    "html": "eur7651030a.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "panasonic",
+    "tipus": "EUR7651050A",
+    "device": "tv",
+    "html": "eur7651050a.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "panasonic",
+    "tipus": "EUR765109A",
+    "device": "tv",
+    "html": "eur765109a.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "panasonic",
+    "tipus": "EUR7651110",
+    "device": "tv",
+    "html": "eur7651110.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "panasonic",
+    "tipus": "EUR7651120",
+    "device": "tv",
+    "html": "eur7651120.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "panasonic",
+    "tipus": "N2QAKB000056",
+    "device": "tv",
+    "html": "n2qakb000056.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "panasonic",
+    "tipus": "N2QAKB000057",
+    "device": "tv",
+    "html": "n2qakb000057.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "panasonic",
+    "tipus": "N2QAKB000060",
+    "device": "tv",
+    "html": "n2qakb000060.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "panasonic",
+    "tipus": "N2QAYA000152",
+    "device": "tv",
+    "html": "n2qaya000152.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "panasonic",
+    "tipus": "N2QAYA000219",
+    "device": "tv",
+    "html": "n2qaya000219.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "panasonic",
+    "tipus": "N2QAYA000220",
+    "device": "tv",
+    "html": "n2qaya000220.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "panasonic",
+    "tipus": "N2QAYB000025",
+    "device": "tv",
+    "html": "n2qayb000025.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "panasonic",
+    "tipus": "N2QAYB000047",
+    "device": "tv",
+    "html": "n2qayb000047.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "panasonic",
+    "tipus": "N2QAYB000048",
+    "device": "tv",
+    "html": "n2qayb000048.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "panasonic",
+    "tipus": "N2QAYB000072",
+    "device": "tv",
+    "html": "n2qayb000072.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "panasonic",
+    "tipus": "N2QAYB000073",
+    "device": "tv",
+    "html": "n2qayb000073.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "panasonic",
+    "tipus": "N2QAYB000114",
+    "device": "tv",
+    "html": "n2qayb000114.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "panasonic",
+    "tipus": "N2QAYB000116",
+    "device": "tv",
+    "html": "n2qayb000116.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "panasonic",
+    "tipus": "N2QAYB000181",
+    "device": "tv",
+    "html": "n2qayb000181.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "panasonic",
+    "tipus": "N2QAYB000182",
+    "device": "tv",
+    "html": "n2qayb000182.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "panasonic",
+    "tipus": "N2QAYB000222",
+    "device": "tv",
+    "html": "n2qayb000222.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "panasonic",
+    "tipus": "N2QAYB000223",
+    "device": "tv",
+    "html": "n2qayb000223.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "panasonic",
+    "tipus": "N2QAYB000239",
+    "device": "tv",
+    "html": "n2qayb000239.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "panasonic",
+    "tipus": "N2QAYB000240",
+    "device": "tv",
+    "html": "n2qayb000240.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "panasonic",
+    "tipus": "N2QAYB000241",
+    "device": "tv",
+    "html": "n2qayb000241.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "panasonic",
+    "tipus": "N2QAYB000291",
+    "device": "tv",
+    "html": "n2qayb000291.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "panasonic",
+    "tipus": "N2QAYB000328",
+    "device": "tv",
+    "html": "n2qayb000328.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "panasonic",
+    "tipus": "N2QAYB000350",
+    "device": "tv",
+    "html": "n2qayb000350.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "panasonic",
+    "tipus": "N2QAYB000353",
+    "device": "tv",
+    "html": "n2qayb000353.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "panasonic",
+    "tipus": "N2QAYB000354",
+    "device": "tv",
+    "html": "n2qayb000354.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "panasonic",
+    "tipus": "N2QAYB000420",
+    "device": "tv",
+    "html": "n2qayb000420.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "panasonic",
+    "tipus": "N2QAYB000428",
+    "device": "tv",
+    "html": "n2qayb000428.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "panasonic",
+    "tipus": "N2QAYB000487",
+    "device": "tv",
+    "html": "n2qayb000487.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "panasonic",
+    "tipus": "N2QAYB000489",
+    "device": "tv",
+    "html": "n2qayb000489.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "panasonic",
+    "tipus": "N2QAYB000490",
+    "device": "tv",
+    "html": "n2qayb000490.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "panasonic",
+    "tipus": "N2QAYB000504",
+    "device": "tv",
+    "html": "n2qayb000504.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "panasonic",
+    "tipus": "N2QAYB000505",
+    "device": "tv",
+    "html": "n2qayb000505.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "panasonic",
+    "tipus": "N2QAYB000572",
+    "device": "tv",
+    "html": "n2qayb000572.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "panasonic",
+    "tipus": "N2QAYB000593",
+    "device": "tv",
+    "html": "n2qayb000593.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "panasonic",
+    "tipus": "N2QAYB000604",
+    "device": "tv",
+    "html": "n2qayb000604.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "panasonic",
+    "tipus": "N2QAYB000666",
+    "device": "tv",
+    "html": "n2qayb000666.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "panasonic",
+    "tipus": "N2QAYB000672",
+    "device": "tv",
+    "html": "n2qayb000672.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "panasonic",
+    "tipus": "N2QAYB000673",
+    "device": "tv",
+    "html": "n2qayb000673.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "panasonic",
+    "tipus": "N2QAYB000715",
+    "device": "tv",
+    "html": "n2qayb000715.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "panasonic",
+    "tipus": "N2QAYB000717",
+    "device": "tv",
+    "html": "n2qayb000717.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "panasonic",
+    "tipus": "N2QAYB000718",
+    "device": "tv",
+    "html": "n2qayb000718.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "panasonic",
+    "tipus": "N2QAYB000752",
+    "device": "tv",
+    "html": "n2qayb000752.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "panasonic",
+    "tipus": "N2QAYB000753",
+    "device": "tv",
+    "html": "n2qayb000753.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "panasonic",
+    "tipus": "N2QAYB000785",
+    "device": "tv",
+    "html": "n2qayb000785.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "panasonic",
+    "tipus": "N2QAYB000807",
+    "device": "tv",
+    "html": "n2qayb000807.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "panasonic",
+    "tipus": "N2QAYB000815",
+    "device": "tv",
+    "html": "n2qayb000815.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "panasonic",
+    "tipus": "N2QAYB000816",
+    "device": "tv",
+    "html": "n2qayb000816.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "panasonic",
+    "tipus": "N2QAYB000829",
+    "device": "tv",
+    "html": "n2qayb000829.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "panasonic",
+    "tipus": "N2QAYB000830",
+    "device": "tv",
+    "html": "n2qayb000830.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "panasonic",
+    "tipus": "N2QAYB000835",
+    "device": "tv",
+    "html": "n2qayb000835.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "panasonic",
+    "tipus": "N2QAYB000840",
+    "device": "tv",
+    "html": "n2qayb000840.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "panasonic",
+    "tipus": "N2QAYB000842",
+    "device": "tv",
+    "html": "n2qayb000842.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "panasonic",
+    "tipus": "N2QAYB000863",
+    "device": "tv",
+    "html": "n2qayb000863.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "panasonic",
+    "tipus": "N2QAYB000928",
+    "device": "tv",
+    "html": "n2qayb000928.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "panasonic",
+    "tipus": "N2QAYB001009",
+    "device": "tv",
+    "html": "n2qayb001009.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "panasonic",
+    "tipus": "N2QAYB001010",
+    "device": "tv",
+    "html": "n2qayb001010.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "panasonic",
+    "tipus": "N2QAYB001011",
+    "device": "tv",
+    "html": "n2qayb001011.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "panasonic",
+    "tipus": "N2QAYB001012",
+    "device": "tv",
+    "html": "n2qayb001012.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "panasonic",
+    "tipus": "N2QAYB001108",
+    "device": "tv",
+    "html": "n2qayb001108.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "panasonic",
+    "tipus": "N2QAYB001109",
+    "device": "tv",
+    "html": "n2qayb001109.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "panasonic",
+    "tipus": "N2QAYB001111",
+    "device": "tv",
+    "html": "n2qayb001111.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "panasonic",
+    "tipus": "N2QAYB001115",
+    "device": "tv",
+    "html": "n2qayb001115.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "panasonic",
+    "tipus": "N2QAYB001178",
+    "device": "tv",
+    "html": "n2qayb001178.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "panasonic",
+    "tipus": "N2QAYB001245",
+    "device": "tv",
+    "html": "n2qayb001245.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "panasonic",
+    "tipus": "N2QAYB001246",
+    "device": "tv",
+    "html": "n2qayb001246.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "panasonic",
+    "tipus": "N2QAYB001247",
+    "device": "tv",
+    "html": "n2qayb001247.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "panasonic",
+    "tipus": "N2QAYB001248",
+    "device": "tv",
+    "html": "n2qayb001248.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "panasonic",
+    "tipus": "N2QAYB001254",
+    "device": "tv",
+    "html": "n2qayb001254.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "panasonic",
+    "tipus": "N2QBYA000037",
+    "device": "tv",
+    "html": "n2qbya000037.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "panasonic",
+    "tipus": "N2QBYA000038",
+    "device": "tv",
+    "html": "n2qbya000038.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "panasonic",
+    "tipus": "N2QBYA000044",
+    "device": "tv",
+    "html": "n2qbya000044.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "panasonic",
+    "tipus": "N2QBYA000048",
+    "device": "tv",
+    "html": "n2qbya000048.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "panasonic",
+    "tipus": "RC-A49128",
+    "device": "tv",
+    "html": "rc-a49128.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "panasonic",
+    "tipus": "RC30092556",
+    "device": "tv",
+    "html": "rc30092556.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "panasonic",
+    "tipus": "RC30092557",
+    "device": "tv",
+    "html": "rc30092557.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "panasonic",
+    "tipus": "RC30094757",
+    "device": "tv",
+    "html": "rc30094757.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "panasonic",
+    "tipus": "RC30100897",
+    "device": "tv",
+    "html": "rc30100897.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "panasonic",
+    "tipus": "RC43160",
+    "device": "tv",
+    "html": "rc43160.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "panasonic",
+    "tipus": "RC45160",
+    "device": "tv",
+    "html": "rc45160.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "panasonic",
+    "tipus": "RC48125",
+    "device": "tv",
+    "html": "rc48125.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "panasonic",
+    "tipus": "RC48127",
+    "device": "tv",
+    "html": "rc48127.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "panasonic",
+    "tipus": "RC4875",
+    "device": "tv",
+    "html": "rc4875.html",
+    "price_min": 5800
+  },
+  {
+    "gyarto": "panasonic",
+    "tipus": "RM-659",
+    "device": "tv",
+    "html": "rm-659.html",
+    "price_min": 5800
+  },
+  {
+    "gyarto": "panasonic",
+    "tipus": "RM-L1268",
+    "device": "tv",
+    "html": "rm-l1268.html",
+    "price_min": 5800
+  },
+  {
+    "gyarto": "panasonic",
+    "tipus": "RM-L1378",
+    "device": "tv",
+    "html": "rm-l1378.html",
+    "price_min": 5800
+  }
+]

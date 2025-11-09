@@ -1,0 +1,170 @@
+[
+  {
+    "gyarto": "qilive",
+    "tipus": "QLV-05",
+    "device": "tv",
+    "html": "qlv-05.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "qilive",
+    "tipus": "QLV-06",
+    "device": "tv",
+    "html": "qlv-06.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "qilive",
+    "tipus": "RC-A2-49101",
+    "device": "tv",
+    "html": "rc-a2-49101.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "qilive",
+    "tipus": "RC-A4995",
+    "device": "tv",
+    "html": "rc-a4995.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "qilive",
+    "tipus": "RC39105",
+    "device": "tv",
+    "html": "rc39105.html",
+    "price_min": 4800
+  },
+  {
+    "gyarto": "qilive",
+    "tipus": "RC43135",
+    "device": "tv",
+    "html": "rc43135.html",
+    "price_min": 4800
+  },
+  {
+    "gyarto": "qilive",
+    "tipus": "RC43135A",
+    "device": "tv",
+    "html": "rc43135a.html",
+    "price_min": 4800
+  },
+  {
+    "gyarto": "qilive",
+    "tipus": "RC43160",
+    "device": "tv",
+    "html": "rc43160.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "qilive",
+    "tipus": "RC4318P",
+    "device": "tv",
+    "html": "rc4318p.html",
+    "price_min": 4800
+  },
+  {
+    "gyarto": "qilive",
+    "tipus": "RC4390",
+    "device": "tv",
+    "html": "rc4390.html",
+    "price_min": 4800
+  },
+  {
+    "gyarto": "qilive",
+    "tipus": "RC4390B",
+    "device": "tv",
+    "html": "rc4390b.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "qilive",
+    "tipus": "RC4390P",
+    "device": "tv",
+    "html": "rc4390p.html",
+    "price_min": 4800
+  },
+  {
+    "gyarto": "qilive",
+    "tipus": "RC45135P",
+    "device": "tv",
+    "html": "rc45135p.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "qilive",
+    "tipus": "RC45157",
+    "device": "tv",
+    "html": "rc45157.html",
+    "price_min": 4800
+  },
+  {
+    "gyarto": "qilive",
+    "tipus": "RC4518P",
+    "device": "tv",
+    "html": "rc4518p.html",
+    "price_min": 4800
+  },
+  {
+    "gyarto": "qilive",
+    "tipus": "RC4590P",
+    "device": "tv",
+    "html": "rc4590p.html",
+    "price_min": 4800
+  },
+  {
+    "gyarto": "qilive",
+    "tipus": "RC4822",
+    "device": "tv",
+    "html": "rc4822.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "qilive",
+    "tipus": "RC4875W",
+    "device": "tv",
+    "html": "rc4875w.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "qilive",
+    "tipus": "RC4876",
+    "device": "tv",
+    "html": "rc4876.html",
+    "price_min": 4800
+  },
+  {
+    "gyarto": "qilive",
+    "tipus": "RC4880",
+    "device": "tv",
+    "html": "rc4880.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "qilive",
+    "tipus": "RC5309F",
+    "device": "tv",
+    "html": "rc5309f.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "qilive",
+    "tipus": "RC5311",
+    "device": "tv",
+    "html": "rc5311.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "qilive",
+    "tipus": "RC6111",
+    "device": "tv",
+    "html": "rc6111.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "qilive",
+    "tipus": "RC6211",
+    "device": "tv",
+    "html": "rc6211.html",
+    "price_min": 0
+  }
+]

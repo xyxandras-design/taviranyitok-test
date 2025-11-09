@@ -1,0 +1,44 @@
+[
+  {
+    "gyarto": "smart-tech",
+    "tipus": "RC4390C",
+    "device": "tv",
+    "html": "rc4390c.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "smart-tech",
+    "tipus": "RC5309F",
+    "device": "tv",
+    "html": "rc5309f.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "smart-tech",
+    "tipus": "RC6111",
+    "device": "tv",
+    "html": "rc6111.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "smart-tech",
+    "tipus": "RC6151",
+    "device": "tv",
+    "html": "rc6151.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "smart-tech",
+    "tipus": "RC6211",
+    "device": "tv",
+    "html": "rc6211.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "smart-tech",
+    "tipus": "SMT-05",
+    "device": "tv",
+    "html": "smt-05.html",
+    "price_min": 0
+  }
+]

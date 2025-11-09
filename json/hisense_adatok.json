@@ -1,0 +1,184 @@
+[
+  {
+    "gyarto": "hisense",
+    "tipus": "EN2A30",
+    "device": "tv",
+    "html": "en2a30.html",
+    "price_min": 5800
+  },
+  {
+    "gyarto": "hisense",
+    "tipus": "EN2AK27H",
+    "device": "tv",
+    "html": "en2ak27h.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "hisense",
+    "tipus": "EN2BB27H",
+    "device": "tv",
+    "html": "en2bb27h.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "hisense",
+    "tipus": "EN2BF27H",
+    "device": "tv",
+    "html": "en2bf27h.html",
+    "price_min": 5800
+  },
+  {
+    "gyarto": "hisense",
+    "tipus": "EN2BI27H",
+    "device": "tv",
+    "html": "en2bi27h.html",
+    "price_min": 5800
+  },
+  {
+    "gyarto": "hisense",
+    "tipus": "EN2D27",
+    "device": "tv",
+    "html": "en2d27.html",
+    "price_min": 5800
+  },
+  {
+    "gyarto": "hisense",
+    "tipus": "EN2F30H",
+    "device": "tv",
+    "html": "en2f30h.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "hisense",
+    "tipus": "EN2G30H",
+    "device": "tv",
+    "html": "en2g30h.html",
+    "price_min": 5800
+  },
+  {
+    "gyarto": "hisense",
+    "tipus": "EN2W30H",
+    "device": "tv",
+    "html": "en2w30h.html",
+    "price_min": 5800
+  },
+  {
+    "gyarto": "hisense",
+    "tipus": "EN2X27HS",
+    "device": "tv",
+    "html": "en2x27hs.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "hisense",
+    "tipus": "EN2X30H",
+    "device": "tv",
+    "html": "en2x30h.html",
+    "price_min": 5800
+  },
+  {
+    "gyarto": "hisense",
+    "tipus": "EN2Y30H",
+    "device": "tv",
+    "html": "en2y30h.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "hisense",
+    "tipus": "EN33928HS",
+    "device": "tv",
+    "html": "en33928hs.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "hisense",
+    "tipus": "EN3A38",
+    "device": "tv",
+    "html": "en3a38.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "hisense",
+    "tipus": "EN3AA39H",
+    "device": "tv",
+    "html": "en3aa39h.html",
+    "price_min": 5800
+  },
+  {
+    "gyarto": "hisense",
+    "tipus": "EN3B39",
+    "device": "tv",
+    "html": "en3b39.html",
+    "price_min": 5800
+  },
+  {
+    "gyarto": "hisense",
+    "tipus": "ER-22601B",
+    "device": "tv",
+    "html": "er-22601b.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "hisense",
+    "tipus": "ER-33903HS",
+    "device": "tv",
+    "html": "er-33903hs.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "hisense",
+    "tipus": "ERF2F60G",
+    "device": "tv",
+    "html": "erf2f60g.html",
+    "price_min": 5800
+  },
+  {
+    "gyarto": "hisense",
+    "tipus": "ERF2J36H",
+    "device": "tv",
+    "html": "erf2j36h.html",
+    "price_min": 5800
+  },
+  {
+    "gyarto": "hisense",
+    "tipus": "ERF3A72",
+    "device": "tv",
+    "html": "erf3a72.html",
+    "price_min": 5800
+  },
+  {
+    "gyarto": "hisense",
+    "tipus": "ERF3A86",
+    "device": "tv",
+    "html": "erf3a86.html",
+    "price_min": 5800
+  },
+  {
+    "gyarto": "hisense",
+    "tipus": "ERF3B72H",
+    "device": "tv",
+    "html": "erf3b72h.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "hisense",
+    "tipus": "ERF3B80H",
+    "device": "tv",
+    "html": "erf3b80h.html",
+    "price_min": 5800
+  },
+  {
+    "gyarto": "hisense",
+    "tipus": "ERF6A64",
+    "device": "tv",
+    "html": "erf6a64.html",
+    "price_min": 5800
+  },
+  {
+    "gyarto": "hisense",
+    "tipus": "ERF6B62H",
+    "device": "tv",
+    "html": "erf6b62h.html",
+    "price_min": 0
+  }
+]

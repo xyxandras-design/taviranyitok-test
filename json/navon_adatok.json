@@ -1,0 +1,100 @@
+[
+  {
+    "gyarto": "navon",
+    "tipus": "RC-A49130",
+    "device": "tv",
+    "html": "rc-a49130.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "navon",
+    "tipus": "RC-A4995",
+    "device": "tv",
+    "html": "rc-a4995.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "navon",
+    "tipus": "RC39105",
+    "device": "tv",
+    "html": "rc39105.html",
+    "price_min": 5800
+  },
+  {
+    "gyarto": "navon",
+    "tipus": "RC43135P",
+    "device": "tv",
+    "html": "rc43135p.html",
+    "price_min": 5800
+  },
+  {
+    "gyarto": "navon",
+    "tipus": "RC4318",
+    "device": "tv",
+    "html": "rc4318.html",
+    "price_min": 5800
+  },
+  {
+    "gyarto": "navon",
+    "tipus": "RC4318P",
+    "device": "tv",
+    "html": "rc4318p.html",
+    "price_min": 5800
+  },
+  {
+    "gyarto": "navon",
+    "tipus": "RC4390",
+    "device": "tv",
+    "html": "rc4390.html",
+    "price_min": 5800
+  },
+  {
+    "gyarto": "navon",
+    "tipus": "RC4390P",
+    "device": "tv",
+    "html": "rc4390p.html",
+    "price_min": 5800
+  },
+  {
+    "gyarto": "navon",
+    "tipus": "RC4590P",
+    "device": "tv",
+    "html": "rc4590p.html",
+    "price_min": 5800
+  },
+  {
+    "gyarto": "navon",
+    "tipus": "RC48125",
+    "device": "tv",
+    "html": "rc48125.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "navon",
+    "tipus": "RC4849",
+    "device": "tv",
+    "html": "rc4849.html",
+    "price_min": 4800
+  },
+  {
+    "gyarto": "navon",
+    "tipus": "RC4875",
+    "device": "tv",
+    "html": "rc4875.html",
+    "price_min": 4800
+  },
+  {
+    "gyarto": "navon",
+    "tipus": "RC5118",
+    "device": "tv",
+    "html": "rc5118.html",
+    "price_min": 0
+  },
+  {
+    "gyarto": "navon",
+    "tipus": "RC6111",
+    "device": "tv",
+    "html": "rc6111.html",
+    "price_min": 0
+  }
+]
