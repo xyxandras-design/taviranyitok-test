@@ -27,7 +27,7 @@ body {
   background-color: #006666;
   color: #fff;
   padding: 10px;
-  height: 70px;
+  height: 50px;
 }
 .header-center {
   text-align: center;
@@ -235,7 +235,7 @@ footer {
 /* Színvariációk */
 .device-tv { background-color: #006666; }
 .device-dvd { background-color: #0044cc; }
-.device-dvdr { background-color: #0022cc; }
+.device-dvdr { background-color: #001199; }
 .device-vcr { background-color: #8b4513; }
 .device-sat { background-color: #ff6600; }
 .device-stb { background-color: #ff2200; }
@@ -243,3 +243,4 @@ footer {
 .device-cd { background-color: #5cb123; }
 .device-tape { background-color: #a19a1b; }
 .device-amp { background-color: #990099; }
+.device-spc { background-color: #882222; }
