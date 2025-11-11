@@ -28,6 +28,11 @@
     font-size: 1rem;
     box-sizing: border-box;
   }
+  .search-col label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
   #searchSuggestions div {
     padding: 6px 10px;
     cursor: pointer;
@@ -36,27 +41,24 @@
   #searchSuggestions div:hover {
     background-color: #999900;
   }
-  
   #searchSuggestions {
-  position: absolute;
-  background: white;
-  border: 1px solid #006666;
-  width: 100%;
-  z-index: 9999;
-  border-radius: 5px;
-  max-height: 250px;
-  overflow-y: auto;
-  box-sizing: border-box;
-}
-
-#searchSuggestions div {
-  background: white;
-  color: black;
-}
-
-#searchSuggestions div:hover {
-  background: #eee;
-}
+    position: absolute;
+    background: white;
+    border: 1px solid #006666;
+    width: 100%;
+    z-index: 9999;
+    border-radius: 5px;
+    max-height: 250px;
+    overflow-y: auto;
+    box-sizing: border-box;
+  }
+  #searchSuggestions div {
+    background: white;
+    color: black;
+  }
+  #searchSuggestions div:hover {
+    background: #eee;
+  }
 
 /*  .info-box {
   padding: 10px; /* belső margó */
@@ -66,6 +68,7 @@
   box-sizing: border-box;
   margin-top: 10px;
 } */
+
 </style>
 </head>
 <body>
