@@ -166,7 +166,7 @@
   <div class="search-col">
     <label for="modelSearch"><strong>Modell/Típus:</strong></label><br>
     <input id="modelSearch" type="text" placeholder="Írj be egy modellszámot vagy típust!">
-    <div id="searchSuggestions" style="margin-top:5px;"></div>
+    <div id="searchSuggestions"></div>
   </div>
 
 </div>
@@ -265,7 +265,7 @@ manufacturer.addEventListener("change", () => {
     })
     .catch(err => {
       console.error("JSON betöltési hiba:", err);
-      box.innerHTML = "<p>Nem sikerült betölteni az adatokat.</p>";
+      box.innerHTML = "<p style='color:black; padding:6px;'>Nem sikerült betölteni az adatokat.</p>";
     });
 });
 
@@ -283,7 +283,7 @@ input.addEventListener("input", () => {
   .slice(0, 10);
 
   if (filtered.length === 0) {
-    box.innerHTML = "<p>Nincs találat.</p>";
+    box.innerHTML = "<p style='color:black; padding:6px;'>Nincs találat.</p>";
     return;
   }
 
