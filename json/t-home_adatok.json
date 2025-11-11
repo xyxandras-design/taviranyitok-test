@@ -2,57 +2,41 @@
   {
     "gyarto": "t-home",
     "tipus": "ISD83-250HD",
-    "device": "stb",
-    "html": "isd83-250hd.html",
-    "price_min": 0
+    "html": "isd83-250hd.html"
   },
   {
     "gyarto": "t-home",
     "tipus": "T-HOME-01",
-    "device": "stb",
-    "html": "t-home-01.html",
-    "price_min": 0
+    "html": "t-home-01.html"
   },
   {
     "gyarto": "t-home",
     "tipus": "T-HOME-02",
-    "device": "stb",
-    "html": "t-home-02.html",
-    "price_min": 0
+    "html": "t-home-02.html"
   },
   {
     "gyarto": "t-home",
     "tipus": "T-HOME-03",
-    "device": "stb",
-    "html": "t-home-03.html",
-    "price_min": 0
+    "html": "t-home-03.html"
   },
   {
     "gyarto": "t-home",
     "tipus": "T-HOME-04",
-    "device": "stb",
-    "html": "t-home-04.html",
-    "price_min": 0
+    "html": "t-home-04.html"
   },
   {
     "gyarto": "t-home",
     "tipus": "T-HOME-05",
-    "device": "stb",
-    "html": "t-home-05.html",
-    "price_min": 0
+    "html": "t-home-05.html"
   },
   {
     "gyarto": "t-home",
     "tipus": "T-HOME-06",
-    "device": "stb",
-    "html": "t-home-06.html",
-    "price_min": 0
+    "html": "t-home-06.html"
   },
   {
     "gyarto": "t-home",
     "tipus": "T-HOME-07",
-    "device": "stb",
-    "html": "t-home-07.html",
-    "price_min": 0
+    "html": "t-home-07.html"
   }
 ]
