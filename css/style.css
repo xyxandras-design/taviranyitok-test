@@ -234,13 +234,35 @@ footer {
 
 /* Színvariációk */
 .device-tv { background-color: #006666; }
-.device-dvd { background-color: #0044cc; }
+.device-dvd { background-color: #0055cc; }
 .device-dvdr { background-color: #001199; }
-.device-vcr { background-color: #8b4513; }
-.device-sat { background-color: #ff6600; }
 .device-stb { background-color: #ff2200; }
+.device-sat { background-color: #ff5500; }
+.device-proj { background-color: #bb69c7; }
 .device-hifi { background-color: #f8af37; }
+.device-sb { background-color: #990099; }
 .device-cd { background-color: #5cb123; }
-.device-tape { background-color: #a19a1b; }
-.device-amp { background-color: #990099; }
-.device-spc { background-color: #882222; }
+.device-tun { background-color: #a19a1b; }
+.device-tape { background-color: #852b37; }
+.device-amp { background-color: #6b45a3; }
+.device-vcr { background-color: #882222; }
+.device-spc { background-color: #886677; }
+
+/* Színes pötty a jobb alsó sarokban */
+.color-dot {
+  position: absolute;
+  bottom: 6px;
+  right: 6px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+/* Színkódok a pict-color érték szerint */
+.color-1 { background-color: #006666; }  /* zöld */
+.color-2 { background-color: #0066CC; }  /* kék */
+.color-3 { background-color: #FF8800; }  /* narancs */
+.color-4 { background-color: #CC0000; }  /* piros */
+.color-5 { background-color: #8000AA; }  /* lila */
+.color-6 { background-color: #666666; }  /* sötétszürke */
