@@ -2,8 +2,11 @@
   {
     "gyarto": "villanyora",
     "tipus": "TRC101",
-    "device": "spc",
-    "html": "trc101.html",
-    "price_min": 0
+    "html": "trc101.html"
+  },
+  {
+    "gyarto": "villanyora",
+    "tipus": "TRC102",
+    "html": "trc102.html"
   }
 ]
