@@ -149,6 +149,13 @@ function selectSuggestion(item) {
 }
 
 // ==========================
+// Típus kiválasztása (egérrel vagy billentyűzettel)
+function selectSuggestion(item) {
+  const folderName = item.gyarto.toLowerCase() + "-taviranyitok";
+  const url = `${folderName}/${item.html}`;
+  window.open(url, "_blank");  // új ablakban nyílik meg
+}
+
 // Billentyűzetes navigáció
 input.addEventListener("keydown", (e) => {
   const items = box.querySelectorAll("div");
@@ -165,7 +172,10 @@ input.addEventListener("keydown", (e) => {
   } else if (e.key === "Enter") {
     e.preventDefault();
     if (selectedIndex >= 0 && selectedIndex < items.length) {
-      items[selectedIndex].click();
+      const item = currentData.find(d => d.tipus === items[selectedIndex].textContent);
+      if (item) {
+        window.open(`${item.gyarto.toLowerCase()}-taviranyitok/${item.html}`, "_blank");
+      }
     }
   }
 });
