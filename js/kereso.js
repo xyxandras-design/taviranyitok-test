@@ -1,3 +1,4 @@
+
 const manufacturerFiles = {
   akai: "json/akai_adatok.json",
   alcor: "json/alcor_adatok.json",
@@ -63,15 +64,12 @@ const manufacturer = document.getElementById("manufacturerSelect");
 const input = document.getElementById("modelSearch");
 const box = document.getElementById("searchSuggestions");
 let currentData = [];
-let selectedIndex = -1; // a kiemelt elem indexe
 
-// ==========================
 // Gyártó kiválasztása
 manufacturer.addEventListener("change", () => {
   const selected = manufacturer.value;
   input.value = "";
   box.innerHTML = "";
-  selectedIndex = -1;
 
   if (!selected) {
     currentData = [];
@@ -89,9 +87,6 @@ manufacturer.addEventListener("change", () => {
       if (currentData.length > 0 && currentData.length <= 10) {
         showSuggestions(currentData);
       }
-
-      // Azonnal fókuszáljon a típuskiválasztóra
-      input.focus();
     })
     .catch(err => {
       console.error("JSON betöltési hiba:", err);
@@ -101,12 +96,10 @@ manufacturer.addEventListener("change", () => {
     });
 });
 
-// ==========================
 // Keresés logika
 input.addEventListener("input", () => {
   const q = input.value.toLowerCase().trim();
   box.innerHTML = "";
-  selectedIndex = -1;
   if (!currentData.length) return;
 
   const n = currentData.length;
@@ -125,73 +118,17 @@ input.addEventListener("input", () => {
   showSuggestions(filtered);
 });
 
-// ==========================
-// Találatok megjelenítése
+// Függvény a találatok megjelenítésére
 function showSuggestions(list) {
   box.innerHTML = "";
-  selectedIndex = -1; // reset minden új lista-generálásnál
-
-  list.slice(0, 10).forEach((item, index) => {
+  list.slice(0, 10).forEach(item => {
     const div = document.createElement("div");
     div.textContent = item.tipus;
-    div.tabIndex = 0; // fókuszálható
-    div.addEventListener("click", () => selectSuggestion(item));
+    div.addEventListener("click", () => {
+      const folderName = item.gyarto.toLowerCase() + "-taviranyitok";
+      const url = `${folderName}/${item.html}`;
+      window.location.href = url;
+    });
     box.appendChild(div);
   });
 }
-
-// ==========================
-// Típus kiválasztása
-function selectSuggestion(item) {
-  const folderName = item.gyarto.toLowerCase() + "-taviranyitok";
-  const url = `${folderName}/${item.html}`;
-  window.open(url, "_blank");  // új ablakban nyílik meg
-}
-
-// ==========================
-// Típus kiválasztása (egérrel vagy billentyűzettel)
-function selectSuggestion(item) {
-  const folderName = item.gyarto.toLowerCase() + "-taviranyitok";
-  const url = `${folderName}/${item.html}`;
-  window.open(url, "_blank");  // új ablakban nyílik meg
-}
-
-// Billentyűzetes navigáció
-input.addEventListener("keydown", (e) => {
-  const items = box.querySelectorAll("div");
-  if (!items.length) return;
-
-  if (e.key === "ArrowDown") {
-    e.preventDefault();
-    selectedIndex = (selectedIndex + 1) % items.length;
-    updateHighlight(items);
-  } else if (e.key === "ArrowUp") {
-    e.preventDefault();
-    selectedIndex = (selectedIndex - 1 + items.length) % items.length;
-    updateHighlight(items);
-  } else if (e.key === "Enter") {
-    e.preventDefault();
-    if (selectedIndex >= 0 && selectedIndex < items.length) {
-      const item = currentData.find(d => d.tipus === items[selectedIndex].textContent);
-      if (item) {
-        window.open(`${item.gyarto.toLowerCase()}-taviranyitok/${item.html}`, "_blank");
-      }
-    }
-  }
-});
-
-// ==========================
-// Kiemelés frissítése
-function updateHighlight(items) {
-  items.forEach((el, idx) => {
-    if (idx === selectedIndex) {
-      el.style.backgroundColor = "#999900";
-      el.style.color = "white";
-      el.scrollIntoView({ block: "nearest" });
-    } else {
-      el.style.backgroundColor = "white";
-      el.style.color = "black";
-    }
-  });
-}
-
