@@ -127,6 +127,7 @@ function showSuggestions(list) {
     div.addEventListener("click", () => {
       const folderName = item.gyarto.toLowerCase() + "-taviranyitok";
       const url = `${folderName}/${item.html}`;
+      console.log("Kiválasztott URL:", url);
       window.open(url, "_blank");  // ← itt a változtatás
     });
     box.appendChild(div);
