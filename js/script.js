@@ -51,11 +51,9 @@ function goBack(fallbackUrl = 'index.html') {
       const refOrigin = new URL(document.referrer).origin;
       if (refOrigin === location.origin) {
         window.history.back();
-        setTimeout(() => {
-          if (location.href === location.href) {
-            window.location.href = fallbackUrl;
-          }
-        }, 300);
+      setTimeout(() => {
+      window.location.href = fallbackUrl;
+    }, 300);
         return;
       }
     }
