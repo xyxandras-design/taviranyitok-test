@@ -119,62 +119,16 @@ input.addEventListener("input", () => {
 });
 
 // Függvény a találatok megjelenítésére
-let selectedIndex = -1; // a kiemelt elem indexe
-
 function showSuggestions(list) {
   box.innerHTML = "";
-  selectedIndex = -1; // minden új lista-generálásnál reseteljük
-
-  list.slice(0, 10).forEach((item, index) => {
+  list.slice(0, 10).forEach(item => {
     const div = document.createElement("div");
     div.textContent = item.tipus;
-    div.tabIndex = 0; // így fókuszálható a keyboard számára
-
-    // Egérkattintás
-    div.addEventListener("click", () => selectSuggestion(item));
-
+    div.addEventListener("click", () => {
+      const folderName = item.gyarto.toLowerCase() + "-taviranyitok";
+      const url = `${folderName}/${item.html}`;
+      window.open(url, "_blank");  // ← itt a változtatás
+    });
     box.appendChild(div);
-  });
-}
-
-// Kiválasztás logika
-function selectSuggestion(item) {
-  const folderName = item.gyarto.toLowerCase() + "-taviranyitok";
-  const url = `${folderName}/${item.html}`;
-  window.open(url, "_blank");  // ← itt a változtatás
-}
-
-// Billentyűzetes navigáció
-input.addEventListener("keydown", (e) => {
-  const items = box.querySelectorAll("div");
-  if (!items.length) return;
-
-  if (e.key === "ArrowDown") {
-    e.preventDefault();
-    selectedIndex = (selectedIndex + 1) % items.length;
-    updateHighlight(items);
-  } else if (e.key === "ArrowUp") {
-    e.preventDefault();
-    selectedIndex = (selectedIndex - 1 + items.length) % items.length;
-    updateHighlight(items);
-  } else if (e.key === "Enter") {
-    e.preventDefault();
-    if (selectedIndex >= 0 && selectedIndex < items.length) {
-      const index = selectedIndex;
-      items[index].click(); // meghívja a click eseményt
-    }
-  }
-});
-
-function updateHighlight(items) {
-  items.forEach((el, idx) => {
-    if (idx === selectedIndex) {
-      el.style.backgroundColor = "#999900";
-      el.style.color = "white";
-      el.scrollIntoView({ block: "nearest" });
-    } else {
-      el.style.backgroundColor = "white";
-      el.style.color = "black";
-    }
   });
 }
