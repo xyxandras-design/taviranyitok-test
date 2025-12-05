@@ -236,12 +236,12 @@ footer {
 .device-tv { background-color: #006666; }
 .device-dvd { background-color: #0055cc; }
 .device-dvdr { background-color: #001199; }
-.device-stb { background-color: #ff2200; }
-.device-sat { background-color: #ff5500; }
-.device-proj { background-color: #bb69c7; }
+.device-stb { background-color: #dd1100; }
+.device-sat { background-color: #ff6600; }
+.device-proj { background-color: #5cb123; }
 .device-hifi { background-color: #f8af37; }
 .device-sb { background-color: #990099; }
-.device-cd { background-color: #5cb123; }
+.device-cd { background-color: #bb69c7; }
 .device-tun { background-color: #a19a1b; }
 .device-tape { background-color: #852b37; }
 .device-amp { background-color: #6b45a3; }
