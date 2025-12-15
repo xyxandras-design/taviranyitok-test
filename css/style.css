@@ -232,6 +232,17 @@ footer {
   pointer-events: none;
 }
 
+/* Infobox, ha közvetlenül a container alatt van (gyártóoldal) */
+.container > .info-box {
+  margin: 10px;
+}
+
+/* Infobox, ha a main-ben van (típusoldal) */
+main > .info-box {
+  margin-left: 0;
+  margin-right: 0;
+}
+
 /* Színvariációk */
 .device-tv { background-color: #006666; }
 .device-dvd { background-color: #0055cc; }
