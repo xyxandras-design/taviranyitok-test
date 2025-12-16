@@ -65,6 +65,12 @@ const input = document.getElementById("modelSearch");
 const box = document.getElementById("searchSuggestions");
 let currentData = [];
 
+function normalize(str) { // Ez új! a beírások során normalizál - _ 2025.12.16. 15:14
+  return str
+    .toLowerCase()
+    .replace(/[-_\s]/g, "");
+}
+
 // Gyártó kiválasztása
 manufacturer.addEventListener("change", () => {
   const selected = manufacturer.value;
@@ -106,9 +112,11 @@ input.addEventListener("input", () => {
   const minChars = n <= 10 ? 0 : n <= 20 ? 1 : 2;
   if (q.length < minChars) return;
 
+  const nq = normalize(q);
+
   const filtered = currentData
-    .filter(item => item.tipus.toLowerCase().includes(q))
-    .slice(0, 10);
+  .filter(item => normalize(item.tipus).includes(nq))
+  .slice(0, 10);
 
   if (filtered.length === 0) {
     box.innerHTML = "<p style='color:black; background:white; padding:5px; border-radius:4px;'>Nincs találat.</p>";
@@ -127,7 +135,6 @@ function showSuggestions(list) {
     div.addEventListener("click", () => {
       const folderName = item.gyarto.toLowerCase() + "-taviranyitok";
       const url = `${folderName}/${item.html}`;
-      console.log("Kiválasztott URL:", url);
       window.open(url, "_blank");  // ← itt a változtatás
     });
     box.appendChild(div);
