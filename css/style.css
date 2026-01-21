@@ -88,6 +88,13 @@ nav a:hover {
   margin: 0;
   line-height: 1.4;
 }
+/* Infobox első sor címe */
+.info-box .info-title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 6px;
+}
 
 /* Fő tartalomrész */
 main {
@@ -277,3 +284,21 @@ main > .info-box {
 .color-4 { background-color: #CC0000; }  /* piros */
 .color-5 { background-color: #8000AA; }  /* lila */
 .color-6 { background-color: #666666; }  /* sötétszürke */
+
+.info-box + main {
+  padding-top: 0px;
+}
+
+/* SEO H2: Google látja, de nem látszik a látogató számára */
+.seo-subtitle {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.container > section {
+  margin: 10px;
+}
