@@ -135,7 +135,7 @@ function showSuggestions(list) {
     div.addEventListener("click", () => {
       const folderName = item.gyarto.toLowerCase() + "-taviranyitok";
       const url = `${folderName}/${item.html}`;
-      window.open(url, "_blank");  // ← itt a változtatás
+      window.location.href = url;  // ← ugyanabban az ablakban nyílik
     });
     box.appendChild(div);
   });
