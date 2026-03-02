@@ -300,5 +300,20 @@ main > .info-box {
 }
 
 .container > section {
-  margin: 10px;
+  margin: 10px 10px 0px 10px; /* alul fele akkora */
+}
+
+/* ===== Mobil PDF szín fix ===== */
+
+.info-box a.pdf-link {
+    color: #FFF300 !important;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.info-box a.pdf-link:hover,
+.info-box a.pdf-link:active,
+.info-box a.pdf-link:visited {
+    color: #FFC000 !important;
+    text-decoration: underline;
 }
