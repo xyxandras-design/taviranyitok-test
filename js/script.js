@@ -1,66 +1,88 @@
-// ==========================
-// Tárolja az utolsó görgetési pozíciót a lightbox használatához
+// =====================================
+// LIGHTBOX KEZELÉS
+// =====================================
+
 let lastScrollY = 0;
 
-// ==========================
-// Lightbox megnyitása és bezárása
 document.addEventListener('DOMContentLoaded', function () {
 
-  // ==========================
-  // Lightbox megnyitása a zoom ikonra kattintva
+  // --- Lightbox megnyitása ---
   document.querySelectorAll('.zoom-icon').forEach(icon => {
     icon.addEventListener('click', function (e) {
       e.preventDefault();
 
-      // A lightbox elem kiválasztása a href alapján
       const target = document.querySelector(this.getAttribute('href'));
+      if (!target) return;
 
-      if (target) {
-        // Aktuális scroll pozíció mentése
-        lastScrollY = window.scrollY;
+      lastScrollY = window.scrollY;
 
-        // Oldal rögzítése (scroll tiltása)
-        document.body.style.position = 'fixed';
-        document.body.style.top = `-${lastScrollY}px`;
-        document.body.style.width = '100%';
+      document.body.style.position = 'fixed';
+      document.body.style.top = `-${lastScrollY}px`;
+      document.body.style.width = '100%';
 
-        // Lightbox megjelenítése
-        target.style.display = 'flex';
-      }
+      target.style.display = 'flex';
     });
   });
 
-  // ==========================
-  // Lightbox bezárása kizárólag a képre kattintva
+  // --- Lightbox bezárása ---
   document.querySelectorAll('.lightbox').forEach(box => {
-    const img = box.querySelector('img');
+    box.addEventListener('click', function () {
 
-    if (img) {
-      img.addEventListener('click', function (e) {
-        e.preventDefault();
+      box.style.display = 'none';
 
-        // Lightbox elrejtése
-        box.style.display = 'none';
+      document.body.style.position = '';
+      document.body.style.top = '';
+      document.body.style.width = '';
 
-        // Oldal visszaállítása
-        document.body.style.position = '';
-        document.body.style.top = '';
-        document.body.style.width = '';
-
-        // Scroll visszaállítása az eredeti pozícióra
-        window.scrollTo(0, lastScrollY);
-      });
-    }
+      window.scrollTo(0, lastScrollY);
+    });
   });
 
-}); // DOMContentLoaded VÉGE
+});
 
-// ==========================
-// Visszalépés konkrét oldalra
-function goBackTo(page) {
-  if (page) {
-    window.location.href = page;  // explicit átirányítás a gyártó oldalra
-  } else {
-    history.back();               // ha nincs paraméter, próbálkozik history-val
+
+// =====================================
+// GYÁRTÓ OLDAL – Scroll mentés + visszaállítás
+// =====================================
+
+// Gyártóoldalt a .product-grid jelenléte alapján azonosítjuk
+if (document.querySelector('.product-grid')) {
+
+  // Scroll mentése CSAK akkor, amikor típusoldal linkre kattintunk
+document.querySelectorAll('.tipus-link').forEach(link => {
+  link.addEventListener('click', function () {
+    sessionStorage.setItem('gyartoScrollPos', window.scrollY);
+  });
+});
+
+  // Visszatéréskor scroll visszaállítás
+  window.addEventListener('load', function () {
+
+    const shouldRestore = sessionStorage.getItem('restoreGyartoScroll');
+    const savedScroll = sessionStorage.getItem('gyartoScrollPos');
+
+    if (shouldRestore === '1' && savedScroll !== null) {
+      window.scrollTo(0, parseInt(savedScroll));
+    }
+
+    // Reset flag minden betöltés után
+    sessionStorage.removeItem('restoreGyartoScroll');
+  });
+}
+
+
+// =====================================
+// TÍPUS OLDAL – Visszagomb logika
+// =====================================
+
+function goBackToGyarto(gyartoUrl) {
+
+  const savedScroll = sessionStorage.getItem('gyartoScrollPos');
+
+  if (savedScroll !== null) {
+    // Jelezzük a gyártó oldalnak, hogy állítsa vissza a scrollt
+    sessionStorage.setItem('restoreGyartoScroll', '1');
   }
+
+  window.location.href = gyartoUrl;
 }
