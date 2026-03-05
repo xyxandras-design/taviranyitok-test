@@ -266,17 +266,6 @@ main > .info-box {
 .device-vcr { background-color: #882222; }
 .device-spc { background-color: #886677; }
 
-/* Színes pötty a jobb alsó sarokban */
-.color-dot {
-  position: absolute;
-  bottom: 6px;
-  right: 6px;
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  pointer-events: none;
-}
-
 /* Színkódok a pict-color érték szerint */
 .color-1 { background-color: #006666; }  /* zöld */
 .color-2 { background-color: #0066CC; }  /* kék */
@@ -316,4 +305,43 @@ main > .info-box {
 .info-box a.pdf-link:visited {
     color: #FFC000 !important;
     text-decoration: underline;
+}
+.color-dot-wrapper {
+  position: absolute;
+  bottom: 6px;
+  right: 6px;
+}
+
+.color-dot {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  pointer-events: auto;
+}
+
+.tooltip-text {
+  position: absolute;
+  bottom: 28px;
+  right: 0;
+
+  background: #fff;
+  color: #666;
+  border: 1px solid #bbb;
+
+  font-family: Tahoma, Verdana, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+
+  padding: 4px 8px;
+  border-radius: 6px;
+
+  white-space: nowrap;
+  display: none;
+  
+  z-index: 50;
+  pointer-events: none;
+}
+
+.color-dot-wrapper:hover .tooltip-text {
+  display: block;
 }
