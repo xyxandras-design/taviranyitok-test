@@ -34,7 +34,10 @@ document.addEventListener('DOMContentLoaded', function () {
       document.body.style.top = '';
       document.body.style.width = '';
 
-      window.scrollTo(0, lastScrollY);
+      requestAnimationFrame(() => {
+        window.scrollTo(0, lastScrollY);
+      });
+
     });
   });
 
@@ -49,11 +52,11 @@ document.addEventListener('DOMContentLoaded', function () {
 if (document.querySelector('.product-grid')) {
 
   // Scroll mentése CSAK akkor, amikor típusoldal linkre kattintunk
-document.querySelectorAll('.tipus-link').forEach(link => {
-  link.addEventListener('click', function () {
-    sessionStorage.setItem('gyartoScrollPos', window.scrollY);
+  document.querySelectorAll('.tipus-link').forEach(link => {
+    link.addEventListener('click', function () {
+      sessionStorage.setItem('gyartoScrollPos', window.scrollY);
+    });
   });
-});
 
   // Visszatéréskor scroll visszaállítás
   window.addEventListener('load', function () {
