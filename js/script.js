@@ -89,3 +89,13 @@ function goBackToGyarto(gyartoUrl) {
 
   window.location.href = gyartoUrl;
 }
+// =====================================
+// PDF LINK SZÍN VISSZAÁLLÍTÁS
+// =====================================
+
+document.addEventListener('DOMContentLoaded', function () {
+  document.querySelectorAll('.info-box .pdf-link').forEach(link => {
+    // csak a színt állítjuk vissza, aláhúzás marad
+    link.style.color = '';
+  });
+});
