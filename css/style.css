@@ -317,3 +317,14 @@ main > .info-box {
     color: #FFC000 !important;
     text-decoration: underline;
 }
+
+.compatibility-list {
+    margin: 0;                /* eltünteti a felső és alsó margót */
+    padding-left: 1.2em;        /* a bal oldali behúzás finomítása */
+    list-style-position: outside; /* a pont a bal szélre kerül, de finomhangolható */
+    list-style-type: disc;     /* pontok */
+}
+
+.compatibility-list li {
+    margin-left: 0;           /* eltünteti a további behúzást */
+}
