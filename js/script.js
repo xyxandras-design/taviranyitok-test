@@ -27,7 +27,6 @@ document.addEventListener('DOMContentLoaded', function () {
   // --- Lightbox bezárása ---
   document.querySelectorAll('.lightbox').forEach(box => {
     box.addEventListener('click', function () {
-
       box.style.display = 'none';
 
       document.body.style.position = '';
@@ -42,7 +41,6 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
 });
-
 
 // =====================================
 // GYÁRTÓ OLDAL – Scroll mentés + visszaállítás
@@ -73,7 +71,6 @@ if (document.querySelector('.product-grid')) {
   });
 }
 
-
 // =====================================
 // TÍPUS OLDAL – Visszagomb logika
 // =====================================
@@ -89,13 +86,3 @@ function goBackToGyarto(gyartoUrl) {
 
   window.location.href = gyartoUrl;
 }
-// =====================================
-// PDF LINK SZÍN VISSZAÁLLÍTÁS
-// =====================================
-
-document.addEventListener('DOMContentLoaded', function () {
-  document.querySelectorAll('.info-box .pdf-link').forEach(link => {
-    // csak a színt állítjuk vissza, aláhúzás marad
-    link.style.color = '';
-  });
-});
