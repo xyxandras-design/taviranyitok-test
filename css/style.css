@@ -326,6 +326,6 @@ list-style-type:disc;
 display:grid;
 grid-auto-flow:column;
 grid-template-rows:repeat(12, auto);
-column-gap: 120px;
+column-gap: 100px;
 justify-content:start;
 }
