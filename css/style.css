@@ -318,13 +318,14 @@ main > .info-box {
     text-decoration: underline;
 }
 
-.compatibility-list {
-    margin: 0;                /* eltünteti a felső és alsó margót */
-    padding-left: 1.2em;        /* a bal oldali behúzás finomítása */
-    list-style-position: outside; /* a pont a bal szélre kerül, de finomhangolható */
-    list-style-type: disc;     /* pontok */
-}
+.compatibility-list{
+margin:0;
+padding-left:1.2em;
+list-style-type:disc;
 
-.compatibility-list li {
-    margin-left: 0;           /* eltünteti a további behúzást */
+display:grid;
+grid-auto-flow:column;
+grid-template-rows:repeat(12, auto);
+column-gap: 135px;
+justify-content:start;
 }
