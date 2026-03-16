@@ -327,7 +327,14 @@ main > .info-box {
     grid-auto-flow:column;
     grid-template-rows:repeat(12, auto);
 
-    column-gap:20px;
+    column-gap:40px;
     justify-content:start;
     width:fit-content;
+}
+@media (max-width:700px){
+
+.compatibility-list{
+    display:block;
+}
+
 }
