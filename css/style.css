@@ -319,13 +319,15 @@ main > .info-box {
 }
 
 .compatibility-list{
-margin:0;
-padding-left:1.2em;
-list-style-type:disc;
+    margin:0;
+    padding-left:0;
+    list-style-type:none;
 
-display:grid;
-grid-auto-flow:column;
-grid-template-rows:repeat(12, auto);
-column-gap: 80px;
-justify-content:start;
+    display:grid;
+    grid-auto-flow:column;
+    grid-template-rows:repeat(12, auto);
+
+    column-gap:70px;
+    justify-content:start;
+    width:fit-content;
 }
