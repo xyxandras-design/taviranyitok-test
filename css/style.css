@@ -336,5 +336,7 @@ main > .info-box {
 .compatibility-list{
     display:block;
 }
-
+.compatibility-list li{
+    padding:2px 0;
+}
 }
